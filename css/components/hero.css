@@ -9,7 +9,7 @@
 }
 
 .hero__slider-slide {
-  border-radius: 12px;
+  border-radius: var(--default-border-radius);
   overflow: hidden;
   position: relative;
   width: 100%;

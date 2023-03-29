@@ -1,0 +1,48 @@
+.results__inner {
+  margin-bottom: 28px;
+}
+.results__title {
+  margin-bottom: 40px;
+}
+.results__paragraph {
+  max-width: 1110px;
+  margin: 0 auto 50px auto;
+}
+.results__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px 40px;
+
+  max-width: 1135px;
+  margin: 0 auto;
+}
+
+.results__item-title {
+  margin-bottom: 15px;
+
+  text-align: center;
+
+  color: var(--accent-color);
+}
+
+.results__item-info {
+  position: relative;
+  z-index: 5;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+.results__item-info::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 205px;
+  height: 40px;
+  background-image: url(../../images/blink.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
