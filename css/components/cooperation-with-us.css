@@ -1,0 +1,35 @@
+.cooperation-with-us {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 610px;
+  width: 100%;
+  margin: 0 auto;
+}
+.cooperation-with-us__info {
+  max-width: 390px;
+  width: 100%;
+
+  text-align: left;
+}
+.cooperation-with-us__title {
+  margin-bottom: 17px;
+
+  text-align: left;
+}
+.cooperation-with-us__paragraph {
+  max-width: 275px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.cooperation-with-us__button {
+  margin-top: auto;
+  max-width: 200px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.cooperation-with-us__img-wrapper {
+  position: absolute;
+  right: -22px;
+  top: 23px;
+}

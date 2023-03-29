@@ -32,3 +32,12 @@ const ourClientsSlider = new Swiper(".our-clients__slider", {
     prevEl: ".our-clients__slider-arrow--prev",
   },
 });
+const pressCenterSlider = new Swiper(".press-center__slider", {
+  slidesPerView: 4,
+  spaceBetween: 40,
+
+  navigation: {
+    nextEl: ".press-center__slider-arrow--next",
+    prevEl: ".press-center__slider-arrow--prev",
+  },
+});

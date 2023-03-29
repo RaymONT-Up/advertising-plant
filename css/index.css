@@ -120,11 +120,12 @@ body {
   font-size: 40px;
   color: var(--main-text-color);
   font-weight: 700;
-  line-height: 44px;
+  line-height: 114%;
   font-family: "Mulish";
 }
 .title--2 {
   font-size: 30px;
+  /* line-height: 114%; */
   color: var(--main-text-color);
   font-weight: 700;
   font-family: "Mulish";

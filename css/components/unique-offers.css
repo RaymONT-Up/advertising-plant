@@ -1,0 +1,32 @@
+@import "./survey.css";
+@import "./cooperation-with-us.css";
+
+.unique-offers__container {
+  max-width: 1260px;
+}
+.unique-offers__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  margin: 33px 0;
+}
+.unique-offers__survey-wrapper {
+  position: relative;
+}
+.unique-offers__survey-wrapper::after {
+  content: "";
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  width: 200px;
+  height: 15px;
+  transform: rotate(90deg);
+
+  background-image: url(../../images/blink.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.unique-offers__cooperation-with-us-wrapper {
+  margin-left: 40px;
+}
