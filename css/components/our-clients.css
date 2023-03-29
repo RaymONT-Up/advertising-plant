@@ -1,9 +1,46 @@
 .our-clients__inner {
+  height: 100%;
+  position: relative;
+  margin-bottom: 30px;
 }
 .our-clients__title {
   margin-top: 23px;
   margin-bottom: 14px;
 }
 .our-clients__paragraph {
+  margin-bottom: 35px;
+}
+
+.our-clients__slider {
+  position: relative;
+  max-width: 1080px;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.our-clients__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-clients__slide-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  background-color: var(--main-text-color);
+}
+.our-clients__slide-card:first-child {
   margin-bottom: 20px;
+}
+.our-clients__slide-logo {
+  display: block;
+  object-fit: cover;
+}
+
+.our-clients__slider-arrows {
+  justify-content: center;
+  margin-top: 40px;
 }

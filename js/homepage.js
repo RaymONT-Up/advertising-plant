@@ -23,3 +23,11 @@ const ourMissionSlider = new Swiper(".our-mission__slider", {
     },
   },
 });
+const ourClientsSlider = new Swiper(".our-clients__slider", {
+  slidesPerView: 5,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".our-clients__slider-arrow--next",
+    prevEl: ".our-clients__slider-arrow--prev",
+  },
+});

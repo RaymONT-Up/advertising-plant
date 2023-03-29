@@ -3,9 +3,12 @@
 
 body {
   box-sizing: border-box;
+
+  font-size: 16px;
   font-family: "Mulish", sans-serif;
   font-weight: 500;
-  color: var(--main-color-text);
+
+  color: var(--main-text-color);
   background-color: var(--page-bg-color);
 
   /* Imitation header "delete later"*/
@@ -78,15 +81,24 @@ body {
   left: 0;
 }
 
-.paragraph {
+.paragraph--1 {
   display: block;
   font-size: 20px;
   font-weight: 500;
   font-family: "Mulish";
   text-align: center;
 
-  color: var(--main-color-text);
+  color: var(--main-text-color);
 }
+.paragraph--2 {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+
+  font-family: "Mulish";
+  color: var(--main-text-color);
+}
+
 .card {
   width: 100%;
   padding: 15px;
@@ -100,20 +112,20 @@ body {
 /* Titles */
 .subtitle {
   font-size: 20px;
-  color: var(--main-color-text);
+  color: var(--main-text-color);
   font-weight: 500;
   font-family: "Mulish";
 }
 .title--1 {
   font-size: 40px;
-  color: var(--main-color-text);
+  color: var(--main-text-color);
   font-weight: 700;
   line-height: 44px;
   font-family: "Mulish";
 }
 .title--2 {
   font-size: 30px;
-  color: var(--main-color-text);
+  color: var(--main-text-color);
   font-weight: 700;
   font-family: "Mulish";
   text-align: center;
@@ -131,7 +143,7 @@ body {
   text-align: center;
   text-decoration: none;
 
-  color: var(--main-color-text);
+  color: var(--main-text-color);
   background-color: var(--accent-color);
 }
 
