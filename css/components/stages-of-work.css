@@ -1,0 +1,76 @@
+.stages-of-work__inner {
+  margin-bottom: 45px;
+}
+
+.stages-of-work__title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.stages-of-work__list {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+}
+.stages-of-work__item {
+  padding: 25px;
+  min-height: 250px;
+}
+.stages-of-work__num {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin: 4px -11px 17px 0px;
+
+  border-bottom: 1px solid var(--accent-color);
+
+  font-size: 63px;
+  font-weight: 700;
+  font-family: "Mulish";
+  text-align: left;
+
+  color: var(--main-text-color);
+}
+.stages-of-work__num::after {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 20px;
+  background-image: url(../../images/blink.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.stages-of-work__icon {
+  display: inline-block;
+  width: 50px;
+  height: 80px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.stages-of-work__icon--01 {
+  background-image: url(../../images/icons/message.png);
+}
+.stages-of-work__icon--02 {
+  background-image: url(../../images/icons/camera.png);
+}
+.stages-of-work__icon--03 {
+  background-image: url(../../images/icons/list.png);
+}
+.stages-of-work__icon--04 {
+  background-image: url(../../images/icons/calculate.png);
+}
+.stages-of-work__icon--05 {
+  background-image: url(../../images/icons/gears.png);
+}
+.stages-of-work__icon--06 {
+  background-image: url(../../images/icons/hands.png);
+}
+.stages-of-work__description {
+  text-align: left;
+}

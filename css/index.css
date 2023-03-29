@@ -161,9 +161,9 @@ body {
   background-position: center;
 }
 .slider__arrow--next {
-  background-image: url("../images/arrow-next.png");
+  background-image: url("../images/icons/arrow-next.png");
 }
 .slider__arrow--prev {
   margin-right: 12px;
-  background-image: url("../images/arrow-prev.png");
+  background-image: url("../images/icons/arrow-prev.png");
 }
