@@ -1,0 +1,133 @@
+.our-mission {
+}
+.our-mission__inner {
+}
+.our-mission__title {
+  margin-top: 19px;
+  margin-bottom: 27px;
+}
+.our-mission__title--accent {
+  display: inline-block;
+  margin-top: 12px;
+
+  font-size: 20px;
+  font-weight: 500;
+
+  color: var(--accent-color);
+}
+.our-mission__contact-btn {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.our-mission__content {
+  display: grid;
+  grid-gap: 0 35px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 30px;
+}
+
+/*  */
+.our-mission__slider {
+  max-width: 630px;
+  height: 400px;
+  width: 100%;
+}
+
+/* Pagination */
+/* Pagination wrapper */
+.our-mission__slider-pagination.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical > .swiper-pagination-bullets {
+  position: absolute;
+  top: 52%;
+  right: 45px;
+  z-index: 5;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 10px;
+
+  max-height: 330px;
+  height: 100%;
+  overflow: auto;
+}
+/* Pagination scroll(если будет много элементов) */
+.our-mission__slider-pagination::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.our-mission__slider-pagination .swiper-pagination-bullet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+  box-sizing: border-box;
+
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Mulish";
+  text-align: center;
+
+  color: #cacaca;
+  background-color: rgba(255, 255, 255, 0);
+
+  opacity: 0.8;
+  transition: all, 0.3s;
+
+  user-select: none;
+}
+.swiper-vertical
+  > .our-mission__slider-pagination.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0;
+}
+.our-mission__slider-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.our-mission__slide {
+  position: relative;
+  box-sizing: border-box;
+  padding: 40px;
+}
+.our-mission__slide-info {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: grid;
+  align-content: space-between;
+  justify-items: start;
+}
+.our-mission__slide-bg-img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+}
+.our-mission__slide-subtitlte {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  max-width: 230px;
+  width: 100%;
+
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Mulish";
+}
+.our-mission__slide-subtitlte::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 1px;
+
+  background-color: var(--accent-color);
+}

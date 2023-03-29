@@ -80,11 +80,18 @@ body {
   line-height: 44px;
   font-family: "Mulish";
 }
+.title--2 {
+  font-size: 30px;
+  color: var(--main-color-text);
+  font-weight: 700;
+  font-family: "Mulish";
+  text-align: center;
+}
 /* Buttons */
 .button--1 {
   display: inline-block;
   border-radius: 10px;
-  padding: 14px 32px;
+  padding: 14px 30px;
 
   font-size: 16px;
   font-weight: 500;
