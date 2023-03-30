@@ -7,13 +7,15 @@
   margin: 0 auto;
 }
 .cooperation-with-us__info {
+  position: relative;
+  z-index: 3;
   max-width: 390px;
   width: 100%;
 
   text-align: left;
 }
 .cooperation-with-us__title {
-  margin-bottom: 17px;
+  margin-bottom: 11px;
 
   text-align: left;
 }
@@ -31,5 +33,20 @@
 .cooperation-with-us__img-wrapper {
   position: absolute;
   right: -22px;
-  top: 23px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cooperation-with-us__img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.cooperation-with-us__img--1 {
+  top: 50px;
+}
+@media (max-width: 460px) {
+  .cooperation-with-us__button {
+    max-width: 150px;
+    padding: 10px 4px;
+  }
 }

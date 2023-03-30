@@ -1,14 +1,15 @@
 .stages-of-work__inner {
-  margin-bottom: 38px;
+  margin-bottom: 32px;
 }
-
+.stages-of-work__content {
+  margin-top: 28px;
+}
 .stages-of-work__title {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 46px;
 }
 .stages-of-work__list {
   display: grid;
-  grid-gap: 20px;
+  /* grid-gap: 20px; */
   grid-template-columns: repeat(6, 1fr);
 }
 .stages-of-work__item {
@@ -21,9 +22,7 @@
   align-items: center;
   justify-content: space-between;
   padding-bottom: 10px;
-  margin: 4px 0 17px 0px;
-
-  border-bottom: 1px solid var(--accent-color);
+  margin: -2px 0px -8px 0px;
 
   font-size: 63px;
   font-weight: 700;
@@ -32,19 +31,12 @@
 
   color: var(--main-text-color);
 }
-.stages-of-work__num::after {
-  content: "";
-  position: absolute;
-  bottom: -11px;
-  left: 0;
-  right: 0;
-  width: 100%;
+
+.stages-of-work__blink-line {
   height: 20px;
-  background-image: url(../../images/blink.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
+  margin-bottom: 9px;
 }
+
 .stages-of-work__icon {
   display: inline-block;
   width: 49px;
@@ -74,4 +66,33 @@
 }
 .stages-of-work__description {
   text-align: left;
+}
+
+@media (max-width: 1000px) {
+  .stages-of-work__num {
+    font-size: 56px;
+  }
+  .stages-of-work__item {
+    padding: 20px;
+    min-height: 225px;
+  }
+  .stages-of-work__icon {
+    width: 58px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .stages-of-work__item {
+    padding: 15px;
+    min-height: 200px;
+  }
+  .stages-of-work__num {
+    font-size: 46px;
+    margin-bottom: 5px;
+  }
+  .stages-of-work__icon {
+    width: 48px;
+    height: 50px;
+  }
 }

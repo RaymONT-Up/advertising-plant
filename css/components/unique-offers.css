@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  margin: 33px 0;
+  margin: 27px 0 34px 0;
 }
 .unique-offers__survey-wrapper {
   position: relative;
@@ -29,4 +29,106 @@
 }
 .unique-offers__cooperation-with-us-wrapper {
   margin-left: 40px;
+}
+
+@media (max-width: 1060px) {
+  .unique-offers__content {
+    margin: 20px auto;
+    max-width: 700px;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  /* Survey */
+  .unique-offers__survey-wrapper::after {
+    content: none;
+  }
+  .unique-offers__survey-wrapper .survey {
+    max-width: 100%;
+    margin: 0;
+  }
+  .unique-offers__survey-wrapper .survey__img-wrapper {
+    right: 0;
+  }
+  /* Cooperation with us */
+
+  .unique-offers__cooperation-with-us-wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .unique-offers__cooperation-with-us-wrapper .cooperation-with-us {
+    margin: 0;
+    max-width: 100%;
+    justify-content: flex-end;
+  }
+  .unique-offers__cooperation-with-us .cooperation-with-us {
+    max-width: 100%;
+
+    margin: 0 auto;
+  }
+  .unique-offers__cooperation-with-us-wrapper .cooperation-with-us__title {
+    max-width: 400px;
+    margin-left: auto;
+
+    text-align: right;
+  }
+
+  .unique-offers__cooperation-with-us-wrapper .cooperation-with-us__paragraph {
+    max-width: 340px;
+    margin-left: auto;
+
+    text-align: right;
+  }
+  .unique-offers__cooperation-with-us-wrapper .cooperation-with-us__button {
+    margin-left: auto;
+    display: block;
+  }
+  .unique-offers__cooperation-with-us-wrapper
+    .cooperation-with-us__img-wrapper {
+    left: 0;
+    right: auto;
+  }
+}
+@media (max-width: 600px) {
+  .unique-offers__survey-wrapper .survey__img-wrapper {
+    max-width: 250px;
+    top: 40%;
+  }
+  .unique-offers__survey-wrapper .survey__info {
+    max-width: 200px;
+  }
+  /*  */
+  .unique-offers__cooperation-with-us-wrapper .cooperation-with-us__title {
+    max-width: 199px;
+  }
+  .unique-offers__cooperation-with-us-wrapper .cooperation-with-us__title br {
+    display: none;
+  }
+  .unique-offers__cooperation-with-us-wrapper .cooperation-with-us__paragraph {
+    max-width: 200px;
+  }
+  .unique-offers__cooperation-with-us-wrapper
+    .cooperation-with-us__img-wrapper {
+    max-width: 200px;
+  }
+}
+@media (max-width: 460px) {
+  .unique-offers__survey-wrapper .survey__img-wrapper {
+    max-width: 170px;
+    top: 48%;
+  }
+  /*  */
+  .unique-offers__cooperation-with-us-wrapper
+    .cooperation-with-us__img-wrapper {
+    max-width: 150px;
+  }
+}
+@media (max-width: 340px) {
+  .unique-offers__survey-wrapper .survey__img-wrapper,
+  .unique-offers__cooperation-with-us-wrapper
+    .cooperation-with-us__img-wrapper {
+    display: none;
+  }
 }

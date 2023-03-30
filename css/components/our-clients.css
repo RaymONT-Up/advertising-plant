@@ -3,9 +3,11 @@
   position: relative;
   margin-bottom: 30px;
 }
+.our-clients__content {
+  margin-top: 18px;
+}
 .our-clients__title {
-  margin-top: 23px;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
 }
 .our-clients__paragraph {
   margin-bottom: 35px;
@@ -37,10 +39,21 @@
 }
 .our-clients__slide-logo {
   display: block;
+  width: 100%;
+
   object-fit: cover;
 }
 
 .our-clients__slider-arrows {
   justify-content: center;
   margin-top: 40px;
+}
+@media (max-width: 500px) {
+  .our-clients__slide-card:first-child {
+    margin-bottom: 10px;
+  }
+  .our-clients__title,
+  .our-clients__paragraph {
+    margin-bottom: 20px;
+  }
 }

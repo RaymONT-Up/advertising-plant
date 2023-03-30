@@ -1,8 +1,10 @@
 .about-us__inner {
   margin-bottom: 23px;
 }
+.about-us__content {
+  margin-top: 18px;
+}
 .about-us__title {
-  margin-top: 25px;
   margin-bottom: 12px;
 }
 .about-us__paragraph {
@@ -38,8 +40,37 @@
 
   color: var(--accent-color);
 }
-.about-us__item-paragraph {
-}
+
 .about-us__item-paragraph:not(:last-child) {
   margin-bottom: 14px;
+}
+@media (max-width: 1000px) {
+  .about-us__item-img-wrapper {
+    max-height: 235px;
+  }
+  .about-us__list {
+    grid-row-gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .about-us__list {
+    grid-gap: 15px;
+  }
+  .about-us__item {
+    text-align: center;
+  }
+  .about-us__item-title {
+    font-size: 20px;
+    color: var(--main-text-color);
+  }
+}
+@media (max-width: 500px) {
+  .about-us__list {
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+  }
+  .about-us__item-img-wrapper {
+    margin-bottom: 15px;
+  }
 }
