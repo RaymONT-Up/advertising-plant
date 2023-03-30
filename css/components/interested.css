@@ -1,0 +1,46 @@
+.interested {
+}
+.interested__inner {
+}
+.interested__form {
+  max-width: 935px;
+  margin: 154px auto 65px auto;
+  width: 100%;
+}
+.interested__form-inputs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  margin-bottom: 44px;
+}
+.interested__form-input {
+  padding: 11px 19px;
+}
+.interested__form-box {
+  display: flex;
+  flex-direction: row;
+  max-width: 580px;
+  margin: 0 auto;
+}
+.interested__form-button {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 220px;
+  margin-right: 35px;
+}
+.interested__form-checkbox {
+  display: flex;
+  align-items: center;
+  max-width: 347px;
+  width: 100%;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  color: var(--grey-color);
+
+  cursor: pointer;
+}
+.interested__form-checkbox .input-checkbox-custom {
+  margin-right: 20px;
+}

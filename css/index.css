@@ -230,7 +230,7 @@ body {
   background-image: url("../images/icons/arrow-prev.png");
 }
 
-/* Input */
+/* Inputs */
 .input {
   box-sizing: border-box;
   padding: 5px 20px;
@@ -251,6 +251,46 @@ body {
 }
 .input:focus-visible {
   outline: 1px solid var(--main-text-color);
+}
+
+.input-checkbox {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+.input-checkbox-custom {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: var(--default-border-radius);
+  border: 2px solid var(--accent-color);
+
+  background-color: transparent;
+  cursor: pointer;
+}
+.input-checkbox-custom::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: var(--default-border-radius);
+  width: 15px;
+  height: 15px;
+
+  background-color: var(--accent-color);
+
+  transition: all, 0.3s;
+  opacity: 0;
+}
+.input-checkbox:checked + .input-checkbox-custom::before {
+  opacity: 1;
 }
 /* Медиа запросы для глобальных стилей */
 @media (max-width: 600px) {
