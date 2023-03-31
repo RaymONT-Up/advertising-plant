@@ -49,7 +49,7 @@
   text-align: center;
 }
 .team__invite-card-title span {
-  display: block;
+  display: inline;
 }
 .team__invite-card-button {
   margin: 0 auto;
