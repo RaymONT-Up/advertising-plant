@@ -27,6 +27,7 @@
 .our-facilities__item-card {
   padding: 22px;
   height: 100%;
+  width: 100%;
 }
 
 .our-facilities__item-img {
@@ -37,7 +38,7 @@
 }
 .our-facilities__item-title {
   box-sizing: border-box;
-  height: 84px;
+  min-height: 84px;
   margin-bottom: 26px;
   border-bottom: 1px solid var(--accent-color);
 
@@ -59,4 +60,86 @@
 }
 .our-facilities__item-info-item:not(:last-child) {
   margin-bottom: 13px;
+}
+
+@media (max-width: 1100px) {
+  .our-facilities__list {
+    grid-gap: 30px;
+  }
+  .our-facilities__item-card {
+    padding: 18px;
+  }
+}
+@media (max-width: 1030px) {
+  .our-facilities__item-card {
+    min-height: 260px;
+  }
+}
+@media (max-width: 930px) {
+  .our-facilities__inner {
+    margin-bottom: 25px;
+  }
+
+  .our-facilities__list {
+    max-width: 700px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .our-facilities__item-wrapper-img {
+    max-width: 100%;
+    max-height: 270px;
+  }
+}
+@media (max-width: 600px) {
+  .our-facilities__list {
+    grid-gap: 15px 20px;
+  }
+  .our-facilities__item {
+    min-width: 100%;
+  }
+  .our-facilities__item-wrapper-img {
+    margin-bottom: 15px;
+  }
+
+  .our-facilities__item-card {
+    padding: 15px;
+    min-height: 235px;
+  }
+  .our-facilities__item-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    min-height: 70px;
+  }
+  .our-facilities__item-info-item {
+    font-size: 12px;
+  }
+}
+@media (max-width: 460px) {
+  .our-facilities__inner {
+    margin-bottom: 13px;
+  }
+
+  .our-facilities__item-wrapper-img {
+    max-height: 130px;
+  }
+  .our-facilities__item-card {
+    padding: 15px;
+    min-height: 170px;
+  }
+  .our-facilities__item-title {
+    font-size: 13px;
+    min-height: 56px;
+    margin-bottom: 15px;
+  }
+  .our-facilities__item-info-item {
+    font-size: 9px;
+  }
+  .our-facilities__item-info-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .our-facilities__list {
+    max-width: 260px;
+    grid-template-columns: 1fr;
+  }
 }

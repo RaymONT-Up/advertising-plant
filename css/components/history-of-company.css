@@ -47,3 +47,74 @@
   height: 100%;
   object-fit: cover;
 }
+
+@media (max-width: 1230px) {
+  .history-of-company__top {
+    grid-template-columns: 1fr 1.3fr;
+    grid-gap: 20px;
+  }
+  .history-of-company__list {
+    grid-gap: 7px 14px;
+  }
+  .results-list__item-info {
+    padding: 15px 8px;
+  }
+}
+@media (max-width: 1000px) {
+  .history-of-company__content {
+    margin-top: 30px;
+  }
+  .history-of-company__top {
+    grid-template-columns: 1fr;
+  }
+  .history-of-company__list {
+    grid-gap: 10px 30px;
+  }
+  .history-of-company__info {
+    max-width: 100%;
+    margin: 0 auto 30px auto;
+  }
+  .history-of-company__paragraph {
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .history-of-company__info {
+    margin-bottom: 10px;
+  }
+  .history-of-company__content {
+    margin-top: 6px;
+  }
+  .history-of-company__paragraph {
+    line-height: 120%;
+  }
+  .history-of-company__list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .history-of-company__activity-title {
+    margin-bottom: 20px;
+  }
+  .history-of-company__list .results-list__item-info {
+    min-height: auto;
+  }
+  .history-of-company__inner {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 460px) {
+  .history-of-company__inner {
+    margin-bottom: 13px;
+  }
+  .history-of-company__info {
+    margin-bottom: 5px;
+  }
+  .history-of-company__list {
+    max-width: 290px;
+    margin: 0 auto;
+
+    grid-template-columns: 1fr;
+  }
+  .history-of-company__paragraph:not(:last-child) {
+    margin-bottom: 0;
+  }
+}

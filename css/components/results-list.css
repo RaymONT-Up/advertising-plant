@@ -35,6 +35,11 @@
   .results-list__item-title {
     margin-bottom: 6px;
 
-    font-size: 40px;
+    font-size: 34px;
+  }
+}
+@media (max-width: 460px) {
+  .results-list__item-title {
+    font-size: 30px;
   }
 }

@@ -29,7 +29,66 @@
   text-align: left;
   line-height: 120%;
 }
-.about-company-hero__video-wrapper {
+
+@media (max-width: 1284px) {
+  .about-company-hero__inner {
+    grid-gap: 25px;
+  }
+  .about-company-hero__info {
+    padding: 40px 25px;
+  }
+  .about-company-hero__title {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+  }
+  .about-company-hero__title br {
+    display: none;
+  }
 }
-.about-company-hero__video {
+@media (max-width: 1000px) {
+  .about-company-hero__inner {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .about-company-hero__info,
+  .about-company-hero__video-wrapper {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about-company-hero__title {
+    text-align: center;
+  }
+  .about-company-hero__paragraph {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .about-company-hero__paragraph br {
+    display: none;
+  }
+}
+@media (max-width: 460px) {
+  .about-company-hero__inner {
+    padding-top: 0;
+    margin-bottom: 5px;
+
+    grid-gap: 15px;
+    grid-template-rows: 1fr 200px;
+  }
+  .about-company-hero__info {
+    padding: 22px 12px;
+  }
+  .about-company-hero__title {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+
+  .about-company-hero__video-wrapper {
+    max-height: 200px;
+    height: 100%;
+  }
 }

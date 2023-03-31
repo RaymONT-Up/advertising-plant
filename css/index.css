@@ -329,3 +329,8 @@ input[type="submit"] {
     font-size: 14px;
   }
 }
+@media (max-width: 360px) {
+  .container {
+    padding: 0 10px;
+  }
+}

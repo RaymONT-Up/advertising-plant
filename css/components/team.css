@@ -48,7 +48,68 @@
   margin-bottom: 30px;
   text-align: center;
 }
+.team__invite-card-title span {
+  display: block;
+}
 .team__invite-card-button {
   margin: 0 auto;
   padding: 10px 35px;
+}
+/*  */
+@media (max-width: 1000px) {
+  .team__invite-card {
+    padding: 25px 15px;
+  }
+  .team__invite-box {
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  .team__title {
+    margin-bottom: 63px;
+  }
+
+  .team__invite-box {
+    max-width: 400px;
+  }
+
+  /* - */
+  .team__card {
+    margin-bottom: 25px;
+  }
+  .team__card:nth-child(2) {
+    margin-bottom: 37px;
+  }
+  .team__card:nth-child(3) {
+    margin-bottom: 39px;
+  }
+  .team__card:nth-child(4) {
+    margin-bottom: 37px;
+  }
+  .team__card:nth-child(5) {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 460px) {
+  .team__invite-title {
+    margin-bottom: 25px;
+
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .team__invite-card-title {
+    margin-bottom: 10px;
+  }
+  .team__invite-card-button {
+    padding: 6px;
+    max-width: 170px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .team__invite-card-title span {
+    display: none;
+  }
 }
