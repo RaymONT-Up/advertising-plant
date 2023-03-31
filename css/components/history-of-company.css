@@ -1,0 +1,49 @@
+@import "./results-list.css";
+
+.history-of-company__inner {
+  margin-bottom: 35px;
+}
+.history-of-company__content {
+  margin-top: 55px;
+}
+.history-of-company__top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin-bottom: 40px;
+}
+.history-of-company__info {
+  max-width: 500px;
+}
+.history-of-company__paragraph {
+  text-align: left;
+}
+.history-of-company__paragraph:not(:last-child) {
+  margin-bottom: 15px;
+}
+.history-of-company__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 7px 20px;
+  margin-top: -10px;
+}
+.history-of-company__list .results-list__item-info {
+  min-height: 69px;
+}
+
+.history-of-company__activity-title {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto 40px auto;
+}
+
+.history-of-company__activity-image-wrapper {
+  border-radius: var(--default-border-radius);
+  overflow: hidden;
+}
+.history-of-company__activity-image-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -32,7 +32,6 @@ if (window.innerWidth < 900) {
         },
         380: {
           slidesPerView: 2.5,
-
           spaceBetween: 30,
         },
         600: {

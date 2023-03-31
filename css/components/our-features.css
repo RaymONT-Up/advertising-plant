@@ -1,0 +1,30 @@
+.our-features__inner {
+  margin-bottom: 40px;
+}
+.our-features__list {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+.our-features__item {
+  padding: 28px;
+}
+.our-features__item-title {
+  margin-bottom: 21px;
+
+  text-align: left;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.our-features__item-blink-line {
+  margin-bottom: 20px;
+}
+.our-features__item-blink-line::after {
+  min-height: 25px;
+  max-width: 110px;
+}
+.our-features__item-paragraph {
+  text-align: left;
+}
