@@ -1,0 +1,33 @@
+@import "./geo-map.css";
+.our-clients-geo {
+}
+.our-clients-geo__inner {
+  margin-bottom: 36px;
+}
+.our-clients-geo__content {
+  margin-top: 33px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 0.7fr 1.1fr;
+}
+.our-clients-geo__info {
+  max-width: 500px;
+  width: 100%;
+}
+.our-clients-geo__title {
+  padding-bottom: 36px;
+  margin-bottom: 36px;
+
+  border-bottom: 1px solid var(--accent-color);
+
+  text-align: left;
+  line-height: 120%;
+}
+.our-clients-geo__title--accent {
+  color: var(--accent-color);
+}
+.our-clients-geo__paragraph {
+  text-align: justify;
+}
+.our-clients-geo__map {
+}

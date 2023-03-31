@@ -1,0 +1,54 @@
+@import "./team-card.css";
+.team {
+}
+.team__inner {
+  margin-bottom: 60px;
+}
+.team__title {
+  margin-bottom: 52px;
+}
+.team__card {
+  margin-bottom: 40px;
+}
+/* ------ *? */
+.team__card:nth-child(2) {
+  margin-bottom: 45px;
+}
+.team__card:nth-child(3) {
+  margin-bottom: 50px;
+}
+.team__card:nth-child(4) {
+  margin-bottom: 63px;
+}
+.team__card:nth-child(5) {
+  margin-bottom: 65px;
+}
+
+/* Team-invite */
+
+.team__invite-title {
+  max-width: 1242px;
+  width: 100%;
+  margin: 0 auto 50px auto;
+
+  text-align: center;
+}
+.team__invite-box {
+  max-width: 1185px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+.team__invite-card {
+  padding: 29px 24px;
+}
+.team__invite-card-title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.team__invite-card-button {
+  margin: 0 auto;
+  padding: 10px 35px;
+}
