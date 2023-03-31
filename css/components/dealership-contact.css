@@ -23,3 +23,14 @@
   margin-bottom: 30px;
   line-height: 120%;
 }
+@media (max-width: 700px) {
+  .dealership-contact__inner {
+    min-height: 360px;
+    padding: 30px;
+  }
+}
+@media (max-width: 460px) {
+  .dealership-contact__inner {
+    padding: 15px;
+  }
+}

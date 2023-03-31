@@ -2,9 +2,15 @@
 }
 .interested__inner {
 }
+.interested__title {
+  display: none;
+  margin-bottom: 25px;
+}
 .interested__form {
   max-width: 935px;
   margin: 154px auto 65px auto;
+  box-sizing: border-box;
+  padding: 0 15px;
   width: 100%;
 }
 .interested__form-inputs {
@@ -43,4 +49,41 @@
 }
 .interested__form-checkbox .input-checkbox-custom {
   margin-right: 20px;
+}
+@media (max-width: 930px) {
+  .interested__title {
+    display: block;
+  }
+  .interested__form {
+    margin-top: 30px;
+  }
+  .interested__form-inputs {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto 10px auto;
+  }
+  .interested__form-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+  }
+  .interested__form-button {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 600px) {
+  .interested__form-inputs {
+    max-width: 250px;
+  }
+  .interested__form-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+  }
+  .interested__form-button {
+    font-size: 16px;
+    height: 40px;
+  }
 }

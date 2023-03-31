@@ -47,6 +47,12 @@
   max-width: 900px;
   margin: 0 auto;
 }
+.profitable-terms__bonuses-mobile {
+  display: none;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
 .profitable-terms__bonuses-item {
   position: relative;
   display: flex;
@@ -106,4 +112,71 @@
 .profitable-terms__bonuses-paragraph {
   font-size: 20px;
   font-weight: 700;
+}
+
+@media (max-width: 930px) {
+  .profitable-terms__steps {
+    grid-template-columns: 1fr;
+    grid-gap: 60px;
+    justify-items: center;
+  }
+  .profitable-terms__steps-item {
+    max-width: 400px;
+    width: 100%;
+  }
+  .profitable-terms__steps-item:not(:last-child)
+    .profitable-terms__steps-card::before {
+    content: "";
+    position: absolute;
+    right: -50%;
+    top: auto;
+    bottom: -89%;
+    width: 100%;
+    height: 15px;
+    z-index: 3;
+
+    background-image: url(../../images/icons/arrow-step-to-down.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .profitable-terms__bonuses-accent {
+    font-size: 25px;
+  }
+  .profitable-terms__bonuses-paragraph {
+    font-size: 18px;
+  }
+  .profitable-terms__bonuses-item:not(:last-child)::before {
+    right: -62%;
+    top: 14%;
+    max-width: 100px;
+    width: 100%;
+    height: 6px;
+  }
+}
+@media (max-width: 900px) {
+  .profitable-terms__bonuses {
+    display: none;
+  }
+  .profitable-terms__bonuses-mobile {
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+  }
+  .profitable-terms__bonuses-item:not(:last-child)::before {
+    display: none;
+  }
+  .profitable-terms__bonuses-icon-wrapper {
+    margin: 0 auto 34px auto;
+  }
+  .profitable-terms__bonuses {
+    grid-gap: 0;
+  }
+}
+@media (max-width: 600px) {
+  .profitable-terms__steps-title.title--1 {
+    font-size: 30px;
+  }
 }
