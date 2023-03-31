@@ -68,6 +68,11 @@
   text-align: left;
 }
 
+@media (max-width: 1260px) {
+  .stages-of-work__item {
+    padding: 15px;
+  }
+}
 @media (max-width: 1000px) {
   .stages-of-work__num {
     font-size: 56px;

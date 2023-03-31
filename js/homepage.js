@@ -2,6 +2,7 @@ const heroSlider = new Swiper(".hero__slider", {
   slidesPerView: 1,
   autoHeigth: true,
   effect: "fade",
+  loop: true,
   fadeEffect: {
     crossFade: true,
   },
@@ -11,8 +12,7 @@ const heroSlider = new Swiper(".hero__slider", {
   },
 });
 const ourClientsSlider = new Swiper(".our-clients__slider", {
-  // slidesPerView: 5,
-  spaceBetween: 20,
+  loop: true,
 
   breakpoints: {
     300: {
@@ -25,9 +25,11 @@ const ourClientsSlider = new Swiper(".our-clients__slider", {
     },
     700: {
       slidesPerView: 4,
+      spaceBetween: 20,
     },
     1000: {
       slidesPerView: 5,
+      spaceBetween: 20,
     },
   },
 
@@ -48,18 +50,20 @@ const stagesOfWorkSlider = new Swiper(".stages-of-work__slider", {
     360: {
       slidesPerView: 2.2,
     },
+    430: {
+      slidesPerView: 2.5,
+    },
     600: {
       slidesPerView: 3.2,
     },
     800: {
-      slidesPerView: 4.2,
-    },
-    1000: {
-      slidesPerView: 5.2,
-    },
-    1000: {
       slidesPerView: 4.5,
     },
+    1100: {
+      slidesPerView: 6,
+      spaceBetween: 15,
+    },
+
     1300: {
       slidesPerView: 6,
       spaceBetween: 20,
@@ -68,8 +72,7 @@ const stagesOfWorkSlider = new Swiper(".stages-of-work__slider", {
 });
 
 const pressCenterSlider = new Swiper(".press-center__slider", {
-  // slidesPerView: 4,
-  // spaceBetween: 40,
+  loop: true,
 
   breakpoints: {
     300: {

@@ -64,3 +64,8 @@
 .press-center__slide-more {
   color: var(--grey-color);
 }
+@media (max-width: 600px) {
+  .press-center__slide-paragraph {
+    height: 63px;
+  }
+}
