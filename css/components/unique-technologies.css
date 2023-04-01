@@ -86,17 +86,14 @@
   z-index: 5;
 }
 .unique-technologies__laptop {
-  z-index: 2;
+  position: relative;
+  z-index: 5;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-/* .unique-technologies__video-wrapper::after {
-  content: "";
-  position: absolute;
-  left: -5%;
-  top: 50%;
-  width: 10px;
-  height: 100px;
-  background-color: red;
-} */
+
 .unique-technologies__video-wrapper {
   position: absolute;
   top: 16px;
@@ -140,4 +137,89 @@
   padding: 10px 21px;
   display: block;
   margin: 0 auto;
+}
+
+@media (max-width: 1240px) {
+  .unique-technologies__top {
+    grid-gap: 50px;
+  }
+  .unique-technologies__card {
+    max-width: 560px;
+    padding: 35px 30px 35px 35px;
+  }
+  .unique-technologies__laptop-with-video {
+    max-width: 594px;
+  }
+  .unique-technologies__laptop-with-video::after {
+    content: none;
+  }
+}
+@media (max-width: 1100px) {
+  .unique-technologies__laptop-with-video {
+    max-width: 500px;
+  }
+  .unique-technologies__video-wrapper {
+    padding: 24.5% 20.5%;
+  }
+}
+@media (max-width: 1000px) {
+  .unique-technologies__top {
+    grid-gap: 20px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    grid-template-areas:
+      "laptop"
+      "card";
+  }
+
+  .unique-technologies__laptop-with-video {
+    position: relative;
+    grid-area: laptop;
+  }
+  .unique-technologies__video-wrapper {
+    height: 0;
+    width: 0;
+    padding: 24.5% 38.5%;
+  }
+
+  .unique-technologies__card::before {
+    content: none;
+  }
+  .unique-technologies__card::after {
+    content: none;
+  }
+}
+@media (max-width: 600px) {
+  .unique-technologies__top {
+    grid-template-rows: 250px 1fr;
+    grid-gap: 0;
+  }
+  .unique-technologies__card {
+    padding: 20px;
+  }
+  .unique-technologies__title {
+    margin-bottom: 15px;
+
+    text-align: center;
+  }
+  .unique-technologies__paragraph {
+    text-align: center;
+  }
+  .unique-technologies__paragraph:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .unique-technologies__laptop-with-video {
+    max-width: 400px;
+  }
+}
+@media (max-width: 460px) {
+  .unique-technologies__top {
+    grid-template-rows: 210px 1fr;
+    grid-gap: 20px;
+  }
+  .unique-technologies__laptop-with-video {
+    max-width: 360px;
+  }
 }

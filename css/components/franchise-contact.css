@@ -2,8 +2,11 @@
   padding-top: 24px;
 }
 .franchise-contact__inner {
-  margin-bottom: 31px;
+  position: relative;
 
+  margin-bottom: 31px;
+  border-radius: var(--default-border-radius);
+  overflow: hidden;
   box-sizing: border-box;
   padding: 50px 50px 50px 67px;
   min-height: 450px;
@@ -19,7 +22,27 @@
 
   text-align: left;
 }
+.franchise-contact__form,
+.franchise-contact__title {
+  position: relative;
+  z-index: 3;
+}
+.franchise-contact__title .br-mobile {
+  display: none;
+}
+.franchise-contact__inner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .franchise-contact__form {
+  position: relative;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   max-width: 220px;
@@ -35,4 +58,57 @@
 .franchise-contact__button {
   padding: 9px;
   margin-top: 29px;
+}
+
+@media (max-width: 1000px) {
+  .franchise-contact__inner {
+    padding: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .franchise-contact__inner {
+    padding: 25px;
+    min-height: 400px;
+  }
+  .franchise-contact__title br {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .franchise-contact {
+    padding-top: 0;
+  }
+  .franchise-contact__inner {
+    padding: 14px;
+    min-height: 360px;
+
+    background-position: 69% 100%;
+  }
+  .franchise-contact__title {
+    margin-bottom: 14px;
+
+    line-height: 121%;
+  }
+
+  .franchise-contact__form .contact-form-1__input {
+    background-color: rgba(var(--page-bg-color-RGB), 0.7);
+  }
+
+  .franchise-contact__button {
+    padding: 7px 9px;
+    margin-top: 14px;
+  }
+}
+@media (max-width: 460px) {
+  .franchise-contact__inner {
+    margin-bottom: 13px;
+  }
+  .franchise-contact__title .br-mobile {
+    display: block;
+  }
+  .franchise-contact__button {
+    padding: 7px 9px;
+    font-size: 14px;
+    max-width: 190px;
+  }
 }
