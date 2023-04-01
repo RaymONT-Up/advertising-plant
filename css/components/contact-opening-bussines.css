@@ -1,0 +1,27 @@
+.contact-opening-bussines__inner {
+  margin-bottom: 130px;
+}
+.contact-opening-bussines__content {
+  margin-top: 62px;
+}
+
+.contact-opening-bussines__title {
+  max-width: 1045px;
+  margin: 0 auto 44px auto;
+  padding: 0 15px;
+
+  text-align: center;
+}
+.contact-opening-bussines__form {
+  max-width: 930px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 13px;
+}
+
+.contact-opening-bussines__button {
+  padding: 12px 0;
+}

@@ -143,7 +143,7 @@
   grid-auto-flow: column;
   grid-gap: 60px 20px;
   /* Counter */
-  counter-reset: myCounter;
+  counter-reset: our-goal__you-get-list;
 }
 .our-goal__you-get-item {
   position: relative;
@@ -152,8 +152,8 @@
 }
 
 .our-goal__you-get-item::before {
-  counter-increment: myCounter;
-  content: counter(myCounter);
+  counter-increment: our-goal__you-get-list;
+  content: counter(our-goal__you-get-list);
 
   display: flex;
   align-items: center;

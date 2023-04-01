@@ -1,0 +1,51 @@
+@import "./geo-map.css";
+
+.franchise-geo-clients__inner {
+  margin-bottom: 58px;
+}
+.franchise-geo-clients__content {
+  margin-top: 52px;
+}
+
+.franchise-geo-clients__top {
+  margin-bottom: 37px;
+}
+.franchise-geo-clients__title {
+  margin-bottom: 32px;
+}
+.franchise-geo-clients__title--accent {
+  color: var(--accent-color);
+}
+
+.franchise-geo-clients__map {
+  width: 100%;
+  max-width: 632px;
+  margin: 0 auto 0 auto;
+}
+/*  */
+.franchise-geo-clients__invite {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 30px 27px 30px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  height: 450px;
+
+  background-image: url(./../../images/franchise-geo-clients__invite-bg.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.franchise-geo-clients__invite-title {
+  max-width: 650px;
+}
+.franchise-geo-clients__invite-button {
+  padding: 12px 28px;
+}
+.franchise-geo-clients__description {
+  max-width: 1150px;
+  text-align: center;
+  margin: 0 auto;
+}

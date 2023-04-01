@@ -296,6 +296,29 @@ input[type="submit"] {
 .input-checkbox:checked + .input-checkbox-custom::before {
   opacity: 1;
 }
+/* olli */
+.list-decor {
+  list-style: none;
+}
+.list-decor li {
+  position: relative;
+  padding-left: 16px;
+}
+.list-decor li::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 0;
+
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+
+  background-color: var(--accent-color);
+}
+.list-decor li:not(:last-child) {
+  margin-bottom: 13px;
+}
 /* Медиа запросы для глобальных стилей */
 @media (max-width: 600px) {
   .title--1 {

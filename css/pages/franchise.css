@@ -1,3 +1,9 @@
 @import "./../components/franchise-contact.css"; /* +contact-form-1 */
 @import "./../components/franchise-conditions.css";
 @import "./../components/franchise-production.css";
+@import "./../components/franchise-geo-clients.css"; /* +geo-map */
+@import "./../components/business-model.css";
+@import "./../components/unique-technologies.css"; /* +video */
+@import "./../components/franchise-composition.css";
+@import "./../components/franchise-steps.css";
+@import "./../components/contact-opening-bussines.css";

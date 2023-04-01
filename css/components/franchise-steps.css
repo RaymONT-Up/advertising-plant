@@ -1,0 +1,40 @@
+.franchise-steps__inner {
+  margin-bottom: 60px;
+}
+.franchise-steps__content {
+  margin-top: 20px;
+}
+.franchise-steps__title {
+  margin-bottom: 34px;
+}
+
+.franchise-steps__item {
+  box-sizing: border-box;
+  padding: 21px 23px 10px 23px;
+  min-height: 200px;
+}
+.franchise-steps__item-num {
+  margin-bottom: 14px;
+
+  text-align: left;
+  font-size: 53px;
+  font-weight: 700;
+}
+
+.franchise-steps__item-blink-line {
+  margin-bottom: 14px;
+}
+.franchise-steps__item-blink-line::after {
+  min-height: 17px;
+  min-width: 26px;
+}
+
+.franchise-steps__item-paragraph {
+  text-align: left;
+  font-size: 17px;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: "Mulish";
+
+  color: var(--main-text-color);
+}

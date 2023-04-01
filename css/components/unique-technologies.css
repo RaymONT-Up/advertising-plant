@@ -1,0 +1,143 @@
+@import "./video.css";
+
+.unique-technologies__inner {
+  margin-bottom: 60px;
+}
+.unique-technologies__content {
+  margin-top: 56px;
+}
+.unique-technologies__top {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 110px;
+}
+.unique-technologies__card {
+  position: relative;
+  max-width: 624px;
+  box-sizing: border-box;
+  padding: 45px 30px 45px 49px;
+}
+/* Связывающая линия */
+.unique-technologies__card::after {
+  content: "";
+  position: absolute;
+  right: -142px;
+  top: 38%;
+  width: 200px;
+  height: 150px;
+  z-index: -1;
+
+  background-image: url(./../../images/decorative-tie-line.png);
+  background-position: center center;
+  background-size: 100% 100%;
+}
+/* Блик */
+.unique-technologies__card::before {
+  content: "";
+  position: absolute;
+  right: -1%;
+  top: 32%;
+  width: 14px;
+  height: 100px;
+  z-index: 3;
+  background-image: url(./../../images/blink-vertical.png);
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.unique-technologies__title {
+  margin-bottom: 37px;
+  text-align: left;
+}
+.unique-technologies__paragraph {
+  max-width: 510px;
+
+  text-align: justify;
+}
+.unique-technologies__paragraph:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+/*  */
+
+.unique-technologies__laptop-with-video {
+  position: absolute;
+  right: 0;
+  max-width: 630px;
+  width: 100%;
+}
+/* Блин на ноутбуке */
+
+.unique-technologies__laptop-with-video::after {
+  content: "";
+  position: absolute;
+  left: 8.1%;
+  top: 190px;
+  width: 14px;
+  height: 100px;
+  z-index: 5;
+  background-image: url(./../../images/blink-vertical.png);
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.unique-technologies__laptop-wrapper {
+  position: absolute;
+  z-index: 5;
+}
+.unique-technologies__laptop {
+  z-index: 2;
+}
+/* .unique-technologies__video-wrapper::after {
+  content: "";
+  position: absolute;
+  left: -5%;
+  top: 50%;
+  width: 10px;
+  height: 100px;
+  background-color: red;
+} */
+.unique-technologies__video-wrapper {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 6;
+
+  padding: 24.5% 24.5%;
+  max-width: 173px;
+  margin: 0 auto;
+}
+.unique-technologies__video-wrapper .video__preview-button {
+  width: 50px;
+  height: 50px;
+}
+
+/* form */
+
+.unique-technologies__contact-title {
+  margin-bottom: 5px;
+}
+.unique-technologies__contact-paragraph {
+  max-width: 666px;
+  margin: 0 auto 52px auto;
+}
+.unique-technologies__form {
+  max-width: 935px;
+  margin: 0 auto;
+}
+.unique-technologies__form-inputs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  margin-bottom: 40px;
+}
+.unique-technologies__form-input {
+  padding: 10px 21px;
+}
+.unique-technologies__form-button {
+  padding: 10px 21px;
+  display: block;
+  margin: 0 auto;
+}
