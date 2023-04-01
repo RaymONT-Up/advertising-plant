@@ -82,6 +82,7 @@
   display: flex;
 }
 .our-goal__invite-item.card-blink {
+  padding: 15px 6px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,15 +204,27 @@
   background-color: var(--accent-color);
 }
 @media (max-width: 1200px) {
-  .our-goal__invite-decor {
+  /* .our-goal__invite-decor {
     display: none;
+  } */
+  .our-goal__invite-item.card-blink {
+    font-size: 18px;
+    padding: 15px 2px;
   }
-
+  .our-goal__invite-decor {
+    width: 79%;
+  }
   .our-goal__you-get {
     padding: 50px;
   }
 }
 @media (max-width: 1000px) {
+  .our-goal__invite-decor {
+    display: none;
+  }
+  .our-goal__invite-item.card-blink {
+    padding: 15px 5px;
+  }
   .our-goal__invite-item.card-blink {
     font-size: 18px;
   }
