@@ -188,7 +188,4 @@
   }
 }
 @media (max-width: 360px) {
-  .business-model__list {
-    grid-gap: 0;
-  }
 }

@@ -6,6 +6,13 @@ const franchiseCompositionSlider = new Swiper(
   {
     slidesPerView: 4.4,
     spaceBetween: 20,
+
+    // breakpoints: {
+    //   200: {
+    //     slidesPerView: 1.3,
+    //   },
+    // },
+
     navigation: {
       nextEl: ".franchise-composition__slider-arrow--next",
       prevEl: ".franchise-composition__slider-arrow--prev",
