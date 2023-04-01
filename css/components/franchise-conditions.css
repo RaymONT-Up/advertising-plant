@@ -1,0 +1,51 @@
+.franchise-conditions {
+}
+.franchise-conditions__inner {
+}
+.franchise-conditions__content {
+  margin-top: 58px;
+}
+.franchise-conditions__title {
+  margin-bottom: 16px;
+}
+
+.franchise-conditions__steps {
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 70px;
+}
+.franchise-conditions__steps-item {
+  position: relative;
+}
+
+.franchise-conditions__steps-item:not(:last-child):after {
+  content: "";
+  position: absolute;
+  top: 59%;
+  right: -18%;
+  transform: translate(-50%, -50%);
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url(./../../images/icons/arrow-step-to.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.franchise-conditions__steps-item-title {
+  margin-bottom: 10px;
+
+  text-align: center;
+}
+.franchise-conditions__steps-item-card {
+  position: relative;
+
+  padding: 20px 6px;
+  line-height: 120%;
+}
+.franchise-conditions__steps-item-card::after {
+  width: 60%;
+  height: 25%;
+}

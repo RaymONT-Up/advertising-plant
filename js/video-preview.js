@@ -1,7 +1,5 @@
 const videoPreviewInit = () => {
-  const videoWrappers = document.querySelectorAll(
-    ".about-company-hero__video-wrapper"
-  );
+  const videoWrappers = document.querySelectorAll(".video-wrapper");
   videoWrappers.forEach(wrapper => {
     const preview = wrapper.querySelector(".video__preview");
     const video = wrapper.querySelector("video");
@@ -9,7 +7,7 @@ const videoPreviewInit = () => {
 
     wrapper.addEventListener("click", () => {
       if (!firstPlay) return;
-      console.log(firstPlay);
+
       if (video.paused) {
         firstPlay = false;
         video.play();

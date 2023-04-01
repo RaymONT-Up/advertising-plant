@@ -1,0 +1,38 @@
+.franchise-contact {
+  padding-top: 24px;
+}
+.franchise-contact__inner {
+  margin-bottom: 31px;
+
+  box-sizing: border-box;
+  padding: 50px 50px 50px 67px;
+  min-height: 450px;
+  height: 100%;
+
+  background-image: url(./../../images/franchise-contact-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.franchise-contact__title {
+  margin-bottom: 31px;
+
+  text-align: left;
+}
+.franchise-contact__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 220px;
+  width: 100%;
+}
+.franchise-contact__form .contact-form-1__input {
+  padding: 7px 20px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+
+  background-color: var(--page-bg-color);
+}
+.franchise-contact__button {
+  padding: 9px;
+  margin-top: 29px;
+}
