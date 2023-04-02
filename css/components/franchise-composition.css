@@ -31,19 +31,14 @@
 }
 .franchise-composition__item {
   min-height: 130px;
-  /* max-width: 280px; */
   box-sizing: border-box;
   padding: 15px 10px 10px 21px;
 }
-.franchise-composition__item::after {
+.franchise-composition__item-title::before {
   counter-increment: franchise-composition__list;
   content: counter(franchise-composition__list) ".";
 
-  position: absolute;
-  top: 15px;
-  left: 20px;
-
-  font-size: 20px;
+  font-size: inherit;
   line-height: 110%;
   font-weight: 500;
   font-family: "Mulish";
@@ -51,7 +46,6 @@
 /*     
     */
 .franchise-composition__item-title {
-  padding-left: 23px;
   margin-bottom: 12px;
 
   text-align: left;
@@ -63,4 +57,46 @@
   margin-top: 22px;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .franchise-composition__slider::after {
+    content: none;
+  }
+}
+@media (max-width: 1000px) {
+  .franchise-composition__slider.swiper {
+    margin-right: -15px;
+  }
+}
+@media (max-width: 600px) {
+  .franchise-composition__inner {
+    margin-bottom: 9px;
+  }
+
+  .franchise-composition__content {
+    margin-top: 15px;
+  }
+
+  .franchise-composition__title {
+    margin-bottom: 18px;
+  }
+
+  .franchise-composition__item {
+    padding: 16px 10px 10px 21px;
+  }
+  .franchise-composition__item-title {
+    font-size: 20px;
+  }
+  .franchise-composition__item-paragraph {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .franchise-composition__slider-arrows {
+    display: none;
+  }
+}
+
+@media (max-width: 460px) {
 }
