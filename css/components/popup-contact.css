@@ -1,0 +1,171 @@
+.popup-contact {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+
+  transition: transform 0.3s;
+  display: none;
+}
+.popup-contact.popup-contact--active {
+  display: flex;
+}
+.popup-contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 6;
+
+  max-width: 500px;
+  width: 100%;
+  padding: 56px 34px 36px 34px;
+
+  border: 1px solid var(--accent-color);
+  border-radius: var(--default-border-radius);
+
+  background-color: var(--page-bg-color);
+}
+.popup-contact__paragraph {
+  max-width: 415px;
+  margin: 0 auto 37px auto;
+
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 500;
+  font-family: "Mulish";
+  text-align: center;
+
+  color: var(--main-text-color);
+}
+
+.popup-contact__form {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.popup-contact__label-input {
+  max-width: 300px;
+
+  margin: 0 auto 18px auto;
+  width: 100%;
+
+  font-size: 16px;
+  font-family: "Gilroy";
+}
+.popup-contact__input.input {
+  padding: 12px 18px;
+
+  font-size: 14px;
+  font-family: "Gilroy";
+
+  margin-top: 7px;
+  width: 100%;
+
+  color: #808080;
+  border: 1px solid #808080;
+}
+.popup-contact__input::placeholder {
+  color: var(--grey-color);
+}
+
+.popup-contact__box-radios {
+  margin: 20px 0px 41px 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.popup-contact__label-radio {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-family: "Gilroy";
+
+  cursor: pointer;
+}
+.popup-contact__radio-custom {
+  margin-right: 13px;
+}
+.popup-contact__label-radio:not(:last-child) {
+  margin-right: 17px;
+}
+
+.popup-contact__button {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto 34px auto;
+  padding: 12px;
+}
+
+.popup-contact__notification {
+  font-family: "Gilroy";
+  font-size: 16px;
+  text-align: center;
+  line-height: 120%;
+
+  color: #808080;
+}
+.popup-contact__notification--accent {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.popup-contact__background {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+  .popup-contact__wrapper {
+    padding: 25px 5px 20px 5px;
+    max-width: 400px;
+  }
+
+  .popup-contact__paragraph {
+    margin-bottom: 20px;
+
+    font-size: 16px;
+  }
+  .popup-contact__label-input {
+    margin-bottom: 13px;
+    font-size: 13px;
+  }
+  .popup-contact__input.input {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  .popup-contact__button.button--1 {
+    padding: 8px;
+    margin-bottom: 10px;
+
+    font-size: 14px;
+  }
+
+  .popup-contact__box-radios {
+    margin: 10px auto 20px auto;
+    display: grid;
+    grid-gap: 10px;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+  }
+  .popup-contact__notification {
+    font-size: 11px;
+  }
+}
+
+@keyframes popupContactAnimation {
+}

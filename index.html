@@ -9,14 +9,7 @@
     <link rel="stylesheet" href="./css/index.css" />
     <!-- Page css -->
     <link rel="stylesheet" href="./css/pages/homepage.css" />
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Swiper cdn css -->
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -404,9 +397,11 @@
           <div class="decor-lines__wrapper">
             <div class="decor-lines__line"></div>
             <div class="decor-lines__content">
-              <a href="#" class="our-mission__contact-btn button--1">
+              <button
+                class="our-mission__contact-btn button--1 popup-contact-open-btn"
+              >
                 Оставить заявку
-              </a>
+              </button>
             </div>
             <div class="decor-lines__line"></div>
           </div>
@@ -958,9 +953,11 @@
                       Но не знаете, с чего начать? Оставьте заявку и наш
                       специалист свяжется с Вами.
                     </p>
-                    <a href="#" class="cooperation-with-us__button button--1">
+                    <button
+                      class="cooperation-with-us__button button--1 popup-contact-open-btn"
+                    >
                       Оставить заявку
-                    </a>
+                    </button>
                   </div>
                   <div class="cooperation-with-us__img-wrapper">
                     <img
@@ -1189,11 +1186,125 @@
         </div>
       </div>
     </main>
+
+    <div class="popup-contact">
+      <div class="popup-contact__wrapper">
+        <p class="popup-contact__paragraph">
+          Оставьте свое сообщение ввиде запроса
+          <br />
+          и наш специалист свяжется с Вами
+          <br />
+          любым указанным Вами способом:
+        </p>
+        <form action="#" class="popup-contact__form">
+          <label class="popup-contact__label-input">
+            Ваше имя:
+            <input
+              type="text"
+              class="popup-contact__input input"
+              placeholder="Напишите ваше имя"
+            />
+          </label>
+
+          <label class="popup-contact__label-input">
+            Контактный телефон*
+            <input
+              type="text"
+              class="popup-contact__input input"
+              required
+              placeholder="Введите ваш номер телефона"
+            />
+          </label>
+
+          <label class="popup-contact__label-input">
+            Е-mail
+            <input
+              type="text"
+              class="popup-contact__input input"
+              placeholder="Напишите ваш электронный адрес"
+            />
+          </label>
+
+          <div class="popup-contact__box-radios">
+            <label class="popup-contact__label-radio">
+              <input
+                class="input-radio"
+                type="radio"
+                checked
+                name="contact"
+                value="louie"
+              />
+              <span
+                class="popup-contact__radio-custom input-radio-custom"
+              ></span>
+              Звонок
+            </label>
+            <label class="popup-contact__label-radio">
+              <input
+                class="input-radio"
+                type="radio"
+                checked
+                name="contact"
+                value="louie"
+              />
+              <span
+                class="popup-contact__radio-custom input-radio-custom"
+              ></span>
+              <nobr>E-mail</nobr>
+            </label>
+
+            <label class="popup-contact__label-radio">
+              <input
+                class="input-radio"
+                type="radio"
+                checked
+                name="contact"
+                value="louie"
+              />
+              <span
+                class="popup-contact__radio-custom input-radio-custom"
+              ></span>
+              Whatsapp
+            </label>
+            <label class="popup-contact__label-radio">
+              <input
+                class="input-radio"
+                type="radio"
+                checked
+                name="contact"
+                value="louie"
+              />
+              <span
+                class="popup-contact__radio-custom input-radio-custom"
+              ></span>
+              Telegram
+            </label>
+          </div>
+
+          <input
+            type="submit"
+            class="popup-contact__button button--1"
+            value="Отправить"
+          />
+          <p class="popup-contact__notification">
+            Нажимая кнопку вы даете согласие на обработку
+            <br />
+            ваших персональных данных и соглашаетесь
+            <br />
+            <a class="popup-contact__notification--accent" href="#">
+              с политикой конфиденциальности
+            </a>
+          </p>
+        </form>
+      </div>
+      <div class="popup-contact__background"></div>
+    </div>
+
     <!-- Js -->
     <!-- Swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <!-- Js -->
-    <script src="./js/homepage.js"></script>
+    <script type="module" src="./js/homepage.js"></script>
   </body>
 </html>

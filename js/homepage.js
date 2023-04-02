@@ -1,3 +1,5 @@
+import popupContactInit from "./popup-contact-init.js";
+popupContactInit();
 const heroSlider = new Swiper(".hero__slider", {
   slidesPerView: 1,
   autoHeigth: true,
