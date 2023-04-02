@@ -239,6 +239,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  transition: opacity 0.3s;
 }
 .slider__arrow--next {
   background-image: url("../images/icons/arrow-next.png");
@@ -247,7 +249,9 @@ body {
   margin-right: 12px;
   background-image: url("../images/icons/arrow-prev.png");
 }
-
+.slider__arrow.swiper-button-disabled {
+  opacity: 0.4;
+}
 /* Inputs */
 .input {
   box-sizing: border-box;
@@ -255,6 +259,7 @@ body {
   border-radius: var(--default-border-radius);
   border: 1px solid var(--accent-color);
 
+  font-family: "Gilroy";
   font-size: 14px;
   line-height: 120%;
 

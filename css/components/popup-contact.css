@@ -118,6 +118,9 @@
   color: var(--accent-color);
   text-decoration: none;
 }
+.popup-contact__notification--accent:hover {
+  text-decoration: underline;
+}
 .popup-contact__background {
   position: absolute;
   z-index: 5;
@@ -165,7 +168,4 @@
   .popup-contact__notification {
     font-size: 11px;
   }
-}
-
-@keyframes popupContactAnimation {
 }
