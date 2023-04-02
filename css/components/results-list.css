@@ -30,16 +30,14 @@
 }
 @media (max-width: 600px) {
   .results-list {
+    grid-gap: 7px;
     grid-template-columns: repeat(1, 1fr);
   }
   .results-list__item-title {
-    margin-bottom: 6px;
+    margin-bottom: 2px;
 
-    font-size: 34px;
+    font-size: 40px;
   }
 }
 @media (max-width: 460px) {
-  .results-list__item-title {
-    font-size: 30px;
-  }
 }

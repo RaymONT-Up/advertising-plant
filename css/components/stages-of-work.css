@@ -88,6 +88,14 @@
 }
 
 @media (max-width: 600px) {
+  .stages-of-work__content {
+    margin-top: 5px;
+  }
+
+  .stages-of-work__title {
+    margin-bottom: 15px;
+  }
+
   .stages-of-work__item {
     padding: 15px;
     min-height: 200px;

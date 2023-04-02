@@ -44,6 +44,7 @@
 .about-us__item-paragraph:not(:last-child) {
   margin-bottom: 14px;
 }
+
 @media (max-width: 1000px) {
   .about-us__item-img-wrapper {
     max-height: 235px;
@@ -66,8 +67,15 @@
   }
 }
 @media (max-width: 500px) {
+  .about-us__content {
+    margin-top: 9px;
+  }
+  .about-us__paragraph {
+    margin-bottom: 23px;
+  }
+
   .about-us__list {
-    grid-gap: 15px;
+    grid-gap: 18px;
     grid-template-columns: 1fr;
   }
   .about-us__item-img-wrapper {

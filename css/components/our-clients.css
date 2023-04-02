@@ -48,12 +48,29 @@
   justify-content: center;
   margin-top: 40px;
 }
+
 @media (max-width: 500px) {
   .our-clients__slide-card:first-child {
     margin-bottom: 10px;
   }
-  .our-clients__title,
+
   .our-clients__paragraph {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 460px) {
+  .our-clients__inner {
+    margin-bottom: 23px;
+  }
+
+  .our-clients__title {
+    max-width: 340px;
+    margin: 0 auto 12px auto;
+  }
+  .our-clients__slide-card {
+    height: 88px;
+  }
+  .our-clients__slider-arrows {
+    margin-top: 19px;
   }
 }
