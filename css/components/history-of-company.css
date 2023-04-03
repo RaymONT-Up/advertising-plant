@@ -132,6 +132,9 @@
 
     grid-template-columns: 1fr;
   }
+  .history-of-company__list .results-list__item-title {
+    font-size: 30px;
+  }
   .history-of-company__paragraph:not(:last-child) {
     margin-bottom: 0;
   }

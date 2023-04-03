@@ -41,38 +41,41 @@ const ourClientsSlider = new Swiper(".our-clients__slider", {
   },
 });
 
-const stagesOfWorkSlider = new Swiper(".stages-of-work__slider", {
-  slidesPerView: 6,
-  spaceBetween: 20,
-  breakpoints: {
-    300: {
-      slidesPerView: 1.5,
-      spaceBetween: 15,
-    },
-    360: {
-      slidesPerView: 2.2,
-    },
-    430: {
-      slidesPerView: 2.5,
-    },
-    600: {
-      slidesPerView: 3.2,
-    },
-    800: {
-      slidesPerView: 4.5,
-    },
-    1100: {
-      slidesPerView: 6,
-      spaceBetween: 15,
-    },
+// Если ширина экрана от 768 до 1100 то включается сетка(нужно дабы не использовать импортант в стилях создании сетки или не создавать новый блок и не скрывать его)
+if (window.innerWidth < 768 || window.innerWidth > 1100) {
+  const stagesOfWorkSlider = new Swiper(".stages-of-work__slider", {
+    slidesPerView: 6,
+    spaceBetween: 20,
+    breakpoints: {
+      300: {
+        slidesPerView: 1.5,
+        spaceBetween: 15,
+      },
+      360: {
+        slidesPerView: 2.2,
+      },
+      430: {
+        slidesPerView: 2.5,
+      },
+      600: {
+        slidesPerView: 3.2,
+      },
+      768: {
+        slidesPerView: 6,
+        spaceBetween: 0,
+      },
+      1100: {
+        slidesPerView: 6,
+        spaceBetween: 15,
+      },
 
-    1300: {
-      slidesPerView: 6,
-      spaceBetween: 20,
+      1300: {
+        slidesPerView: 6,
+        spaceBetween: 20,
+      },
     },
-  },
-});
-
+  });
+}
 const pressCenterSlider = new Swiper(".press-center__slider", {
   loop: true,
 
