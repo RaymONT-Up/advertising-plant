@@ -41,8 +41,7 @@ const ourClientsSlider = new Swiper(".our-clients__slider", {
   },
 });
 
-// Если ширина экрана от 768 до 1100 то включается сетка(нужно дабы не использовать импортант в стилях создании сетки или не создавать новый блок и не скрывать его)
-if (window.innerWidth < 768 || window.innerWidth > 1100) {
+if (window.innerWidth < 768) {
   const stagesOfWorkSlider = new Swiper(".stages-of-work__slider", {
     slidesPerView: 6,
     spaceBetween: 20,
