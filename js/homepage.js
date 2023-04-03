@@ -55,14 +55,15 @@ const stagesOfWorkSlider = new Swiper(".stages-of-work__slider", {
     },
     600: {
       slidesPerView: 3.2,
+      spaceBetween: 15,
     },
-    768: {
+    769: {
       slidesPerView: 6,
       spaceBetween: 15,
     },
     1100: {
       slidesPerView: 0,
-      spaceBetween: 0,
+      spaceBetween: 15,
     },
 
     1300: {
