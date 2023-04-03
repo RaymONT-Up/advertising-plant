@@ -1,5 +1,4 @@
 import videoPreviewInit from "./video-preview.js";
-videoPreviewInit();
 
 const franchiseCompositionSlider = new Swiper(
   ".franchise-composition__slider",

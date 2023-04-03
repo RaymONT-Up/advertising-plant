@@ -1,5 +1,3 @@
-import videoPreviewInit from "./video-preview.js";
-videoPreviewInit();
 const historyOfCompanyImagesSlider = new Swiper(
   ".history-of-company__activity-images",
   {

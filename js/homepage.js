@@ -1,5 +1,3 @@
-import popupContactInit from "./popup-contact-init.js";
-popupContactInit();
 const heroSlider = new Swiper(".hero__slider", {
   slidesPerView: 1,
   autoHeigth: true,
@@ -41,40 +39,39 @@ const ourClientsSlider = new Swiper(".our-clients__slider", {
   },
 });
 
-if (window.innerWidth < 768) {
-  const stagesOfWorkSlider = new Swiper(".stages-of-work__slider", {
-    slidesPerView: 6,
-    spaceBetween: 20,
-    breakpoints: {
-      300: {
-        slidesPerView: 1.5,
-        spaceBetween: 15,
-      },
-      360: {
-        slidesPerView: 2.2,
-      },
-      430: {
-        slidesPerView: 2.5,
-      },
-      600: {
-        slidesPerView: 3.2,
-      },
-      768: {
-        slidesPerView: 6,
-        spaceBetween: 0,
-      },
-      1100: {
-        slidesPerView: 6,
-        spaceBetween: 15,
-      },
-
-      1300: {
-        slidesPerView: 6,
-        spaceBetween: 20,
-      },
+const stagesOfWorkSlider = new Swiper(".stages-of-work__slider", {
+  slidesPerView: 6,
+  spaceBetween: 20,
+  breakpoints: {
+    300: {
+      slidesPerView: 1.5,
+      spaceBetween: 15,
     },
-  });
-}
+    360: {
+      slidesPerView: 2.2,
+    },
+    430: {
+      slidesPerView: 2.5,
+    },
+    600: {
+      slidesPerView: 3.2,
+    },
+    768: {
+      slidesPerView: 6,
+      spaceBetween: 15,
+    },
+    1100: {
+      slidesPerView: 0,
+      spaceBetween: 0,
+    },
+
+    1300: {
+      slidesPerView: 0,
+      spaceBetween: 0,
+    },
+  },
+});
+// }
 const pressCenterSlider = new Swiper(".press-center__slider", {
   loop: true,
 
