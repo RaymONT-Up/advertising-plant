@@ -256,6 +256,6 @@
 }
 @media (max-width: 380px) {
   .profitable-terms__bonuses-icon-wrapper::after {
-    right: -140%;
+    right: -70%;
   }
 }

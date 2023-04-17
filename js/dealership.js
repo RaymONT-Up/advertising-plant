@@ -29,7 +29,7 @@ const profitableTermsBonusesSlider = new Swiper(
         slidesPerView: 1.5,
         spaceBetween: 20,
       },
-      380: {
+      320: {
         slidesPerView: 2.5,
         spaceBetween: 30,
       },

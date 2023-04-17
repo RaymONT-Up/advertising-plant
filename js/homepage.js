@@ -109,8 +109,12 @@ const ourMissionSlider = new Swiper(".our-mission__slider", {
   },
 
   breakpoints: {
-    0: {},
+    0: {
+      direction: "horizontal",
+    },
     600: {
+      direction: "vertical",
+
       pagination: {
         el: ".our-mission__slider-pagination",
         clickable: true,
