@@ -102,25 +102,34 @@ const pressCenterSlider = new Swiper(".press-center__slider", {
   },
 });
 
-// Если это мобильное устройство
-if (
-  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-    navigator.userAgent
-  )
-) {
-} else {
-  // В случае если слидер должен быть только на PC
-  const ourMissionSlider = new Swiper(".our-mission__slider", {
-    direction: "vertical",
+const ourMissionSlider = new Swiper(".our-mission__slider", {
+  direction: "vertical",
+  autoplay: {
+    delay: 5000,
+  },
 
-    pagination: {
-      el: ".our-mission__slider-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return `<button class="${className}">  
+  breakpoints: {
+    0: {},
+    600: {
+      pagination: {
+        el: ".our-mission__slider-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return `<button class="${className}">  
         <span>0${index + 1}</span>
       </button>`;
+        },
       },
     },
+  },
+});
+// Выключение автопрокрутки на hover
+const ourMissionSliders = document.querySelectorAll(".our-mission__slider");
+ourMissionSliders.forEach((item, index) => {
+  item.addEventListener("mouseenter", e => {
+    ourMissionSlider[index].autoplay.stop();
   });
-}
+  item.addEventListener("mouseleave", e => {
+    ourMissionSlider[index].autoplay.start();
+  });
+});
