@@ -1,0 +1,24 @@
+.vacancies-hero__inner {
+  border-radius: var(--default-border-radius);
+
+  margin-top: 20px;
+  padding: 70px 50px 100px 66px;
+  box-sizing: border-box;
+  min-height: 450px;
+  margin-bottom: 31px;
+
+  background-position: center center;
+  background-size: cover;
+  background-image: url(./../../images/vacancies-hero-bg.png);
+  background-repeat: no-repeat;
+}
+.vacancies-hero__title {
+  margin-bottom: 20px;
+}
+.vacancies-hero__subtitle {
+  text-align: left;
+  max-width: 655px;
+
+  line-height: 120%;
+  font-size: 35px;
+}

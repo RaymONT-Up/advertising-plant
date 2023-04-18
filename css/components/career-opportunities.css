@@ -1,0 +1,108 @@
+.career-opportunities__inner {
+  margin-bottom: 20px;
+}
+
+.career-opportunities__content {
+  max-width: 1080px;
+  padding: 0 15px;
+  margin: 37px auto;
+}
+.career-opportunities__slider {
+  margin-bottom: 35px;
+}
+.career-opportunities__list {
+  counter-reset: career-opportunities__list;
+}
+.career-opportunities__item {
+  padding: 31px 21px 10px 24px;
+  min-height: 205px;
+}
+
+.career-opportunities__item-top {
+  position: relative;
+  margin-bottom: 18px;
+}
+.career-opportunities__item-num {
+  position: relative;
+
+  text-align: left;
+  font-weight: 700;
+  font-size: 63px;
+  line-height: 100%;
+}
+.career-opportunities__item-icon {
+  position: absolute;
+  right: -8%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 39px;
+  height: 37px;
+
+  background-image: url(./../../images/icons/career-opportunities-1.png);
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.career-opportunities__item-icon--2 {
+  right: -5%;
+  width: 35px;
+  height: 44px;
+  background-image: url(./../../images/icons/career-opportunities-2.png);
+}
+.career-opportunities__item-icon--3 {
+  right: 0;
+  width: 29px;
+  height: 37px;
+  background-image: url(./../../images/icons/career-opportunities-3.png);
+}
+.career-opportunities__item-icon--4 {
+  right: -3%;
+  width: 33px;
+  height: 42px;
+  background-image: url(./../../images/icons/career-opportunities-4.png);
+}
+.career-opportunities__item-icon--5 {
+  right: -10%;
+  width: 43px;
+  height: 47px;
+  background-image: url(./../../images/icons/career-opportunities-5.png);
+}
+
+.career-opportunities__item-blink-line {
+  margin-bottom: 17px;
+}
+.career-opportunities__item-blink-line::after {
+  min-height: 18px;
+}
+.career-opportunities__item-paragraph {
+  max-width: 149px;
+
+  text-align: left;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: "Mulish";
+}
+
+/*  */
+.career-opportunities__title {
+  max-width: 940px;
+  margin: 0 auto 40px auto;
+
+  text-align: center;
+}
+.career-opportunities__notification {
+  max-width: 700px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 10px 11px 10px;
+  margin: 0 auto;
+  border-radius: var(--default-border-radius);
+  border: 1px solid var(--accent-color);
+
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Mulish";
+  text-align: center;
+
+  color: var(--main-text-color);
+}
