@@ -1,0 +1,31 @@
+.hr-department {
+}
+.hr-department__inner {
+}
+.hr-department__content {
+  max-width: 710px;
+  margin: 40px auto 65px auto;
+  display: grid;
+  grid-gap: 65px;
+  grid-template-columns: 0.8fr 1.2fr;
+}
+.hr-department__box {
+  display: flex;
+  flex-direction: column;
+}
+.hr-department__title {
+  margin-bottom: 6px;
+
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Mulish";
+}
+.hr-department__phone {
+  text-align: left;
+  text-decoration: none;
+  transition: all, 0.3s;
+  color: var(--main-text-color);
+}
+.hr-department__phone:hover {
+  color: var(--accent-color);
+}
