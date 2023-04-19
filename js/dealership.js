@@ -6,10 +6,11 @@ const ourGoalInviteListSliderour = new Swiper(".our-goal__intive-slider", {
     },
     400: {
       slidesPerView: 2.5,
+      spaceBetween: 10,
     },
     600: {
       slidesPerView: 3.5,
-      spaceBetween: 25,
+      spaceBetween: 20,
     },
     1000: {
       slidesPerView: 5,

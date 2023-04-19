@@ -259,3 +259,8 @@
     right: -70%;
   }
 }
+@media (max-width: 319px) {
+  .profitable-terms__bonuses-icon-wrapper::before {
+    right: -120%;
+  }
+}
