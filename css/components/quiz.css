@@ -1,0 +1,28 @@
+.quiz {
+}
+.quiz--active {
+}
+.quiz__content {
+}
+.quiz__title {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.quiz__answers {
+  display: flex;
+  flex-direction: column;
+}
+.quiz__label-wrapper {
+  display: flex;
+  margin-bottom: 14px;
+}
+.quiz__label {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+.quiz__radio {
+  margin-right: 13px;
+}
+.quiz__box {
+}

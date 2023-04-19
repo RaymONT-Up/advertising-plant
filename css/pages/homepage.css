@@ -8,3 +8,4 @@
 @import "../components/unique-offers.css"; /*Внутри unique offers используются @import "./survey.css"; @import "./cooperation-with-us.css"; */
 
 @import "../components/press-center.css";
+@import "../components/quiz.css";

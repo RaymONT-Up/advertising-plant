@@ -22,8 +22,8 @@
 }
 
 .faq__accordion-btn {
+  box-sizing: border-box;
   position: relative;
-  width: 100%;
   display: block;
   padding: 20px 60px 20px 40px;
   border-radius: var(--default-border-radius);
@@ -35,6 +35,8 @@
 
   color: var(--main-text-color);
   background-color: var(--card-bg-color);
+
+  cursor: pointer;
 }
 .faq__accordion-btn-icon {
   position: absolute;
@@ -52,10 +54,12 @@
 }
 .faq__accordion-btn-icon-line {
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   transition: all, 0.3s;
 }
 .faq__accordion-btn-icon-line--1 {
@@ -91,12 +95,11 @@
   background-color: transparent;
 }
 .faq__accordion--open .faq__accordion-btn-icon-line--1 {
-  width: 45%;
-  height: 1px;
-  background-color: var(--accent-color);
+  transform: rotateZ(720deg);
 }
 .faq__accordion--open .faq__accordion-btn-icon-line--2 {
-  display: none;
+  transform: rotateZ(630deg);
+  background-color: var(--accent-color);
 }
 
 .faq__accordion-paragraph {
