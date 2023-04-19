@@ -90,6 +90,9 @@
 
   text-align: center;
 }
+.career-opportunities__title--mob {
+  display: none;
+}
 .career-opportunities__notification {
   max-width: 700px;
   box-sizing: border-box;
@@ -105,4 +108,68 @@
   text-align: center;
 
   color: var(--main-text-color);
+}
+.career-opportunities__notification br {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .career-opportunities__inner {
+    margin-bottom: 14px;
+  }
+  .career-opportunities__content {
+    margin-top: 10px;
+  }
+  .career-opportunities__slider {
+    margin: 0 -15px 17px 20px;
+    padding-right: 20px;
+  }
+  .career-opportunities__title {
+    max-width: 681px;
+    margin-bottom: 17px;
+
+    line-height: 120%;
+  }
+}
+@media (max-width: 600px) {
+  .career-opportunities__inner {
+    margin-bottom: 21px;
+  }
+  .career-opportunities__item {
+    padding: 25px 22px 14px 21px;
+  }
+
+  .career-opportunities__item-paragraph {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 460px) {
+  .career-opportunities__content {
+    margin-top: 17px;
+  }
+  .career-opportunities__slider {
+    margin: 0 -15px 17px 0px;
+  }
+  .career-opportunities__item {
+    padding: 31px 24px 13px 22px;
+  }
+
+  .career-opportunities__title {
+    margin-bottom: 22px;
+  }
+  .career-opportunities__title--mob {
+    display: inline-block;
+  }
+  .career-opportunities__title--pc {
+    display: none;
+  }
+  .career-opportunities__notification {
+    padding: 11px 13px 18px 10px;
+    line-height: 130%;
+    font-size: 20px;
+  }
+  .career-opportunities__notification br {
+    display: block;
+  }
 }

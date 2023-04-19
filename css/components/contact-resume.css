@@ -61,6 +61,8 @@
   background-size: cover;
 }
 .contact-resume__form-input {
+  border-radius: var(--default-border-radius);
+
   margin-top: 8px;
   padding: 12px 17px;
 
@@ -101,6 +103,9 @@
 
   color: #808080;
 }
+.contact-resume__privacy-policy--mob {
+  display: none;
+}
 .contact-resume__privacy-policy-link {
   color: var(--accent-color);
   text-decoration: none;
@@ -131,4 +136,44 @@
 }
 .contact-resume__topical-vacancies-link:hover:after {
   background-color: transparent;
+}
+
+@media (max-width: 800px) {
+  .contact-resume__inner {
+    margin-bottom: 20px;
+  }
+  .contact-resume__content {
+    margin-top: 37px;
+  }
+  .contact-resume__privacy-policy {
+    margin-bottom: 20px;
+  }
+  .contact-resume__topical-vacancies {
+    max-width: 535px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  .contact-resume__inner {
+    margin-bottom: 13px;
+  }
+  .contact-resume__content {
+    margin-top: 19px;
+  }
+  .contact-resume__privacy-policy {
+    max-width: 300px;
+    margin: 32px auto 24px auto;
+
+    font-size: 16px;
+    line-height: 120%;
+  }
+  .contact-resume__topical-vacancies {
+    max-width: 350px;
+  }
+  .contact-resume__topical-vacancies-link::after {
+    bottom: -7%;
+  }
+  .contact-resume__privacy-policy--mob {
+    display: block;
+  }
 }

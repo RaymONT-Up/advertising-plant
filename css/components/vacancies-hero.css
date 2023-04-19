@@ -12,7 +12,14 @@
   background-image: url(./../../images/vacancies-hero-bg.png);
   background-repeat: no-repeat;
 }
+.vacancies-hero__title,
+.vacancies-hero__subtitle {
+  position: relative;
+  z-index: 1;
+}
 .vacancies-hero__title {
+  position: relative;
+  z-index: 1;
   margin-bottom: 20px;
 }
 .vacancies-hero__subtitle {
@@ -21,4 +28,79 @@
 
   line-height: 120%;
   font-size: 35px;
+}
+.vacancies-hero__subtitle--mob {
+  display: none;
+}
+.vacancies-hero__subtitle--mob-br {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .vacancies-hero__inner {
+    position: relative;
+    padding: 40px;
+    min-height: 350px;
+    overflow: hidden;
+  }
+  .vacancies-hero__inner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+@media (max-width: 800px) {
+  .vacancies-hero__inner {
+    margin-top: 30px;
+    padding: 35px 20px 43px 50px;
+    min-height: auto;
+    margin-bottom: 12px;
+
+    background-position: 100% 100%;
+  }
+  .vacancies-hero__title {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  .vacancies-hero .container {
+    max-width: 702px;
+  }
+  .vacancies-hero__subtitle {
+    font-size: 25px;
+    max-width: 394px;
+    line-height: 120%;
+  }
+}
+
+@media (max-width: 600px) {
+  .vacancies-hero__inner {
+    padding: 20px 20px 68px 20px;
+  }
+}
+@media (max-width: 460px) {
+  .vacancies-hero__inner {
+    padding: 17px 17px 63px 13px;
+    background-position: 77% 100%;
+  }
+  .vacancies-hero__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .vacancies-hero__subtitle {
+    max-width: 226px;
+    font-size: 20px;
+  }
+  .vacancies-hero__subtitle--mob {
+    display: inline;
+  }
+  .vacancies-hero__subtitle--mob-br {
+    display: block;
+  }
+  .vacancies-hero__subtitle--pc {
+    display: none;
+  }
 }

@@ -21,11 +21,40 @@
   font-family: "Mulish";
 }
 .hr-department__phone {
+  font-size: 30px;
   text-align: left;
   text-decoration: none;
   transition: all, 0.3s;
   color: var(--main-text-color);
 }
+.hr-department__phone br {
+  display: none;
+}
 .hr-department__phone:hover {
   color: var(--accent-color);
+}
+
+@media (max-width: 800px) {
+  .hr-department__content {
+    margin-top: 27px;
+    grid-gap: 24px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .hr-department__box {
+    text-align: center;
+  }
+  .hr-department__phone {
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .hr-department__content {
+    grid-gap: 5px;
+  }
+}
+@media (max-width: 460px) {
+  .hr-department__phone br {
+    display: block;
+  }
 }
