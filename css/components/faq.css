@@ -96,6 +96,7 @@
 }
 .faq__accordion--open .faq__accordion-btn-icon-line--1 {
   transform: rotateZ(720deg);
+  background-color: var(--accent-color);
 }
 .faq__accordion--open .faq__accordion-btn-icon-line--2 {
   transform: rotateZ(630deg);
