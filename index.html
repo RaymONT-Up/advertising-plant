@@ -397,12 +397,13 @@
           <div class="decor-lines__wrapper">
             <div class="decor-lines__line"></div>
             <div class="decor-lines__content">
-              <button
+              <a
+                href="#popup-contact"
                 class="our-mission__contact-btn button--1 popup-contact-open-btn popup-link"
                 data-popup="popup-contact"
               >
                 Оставить заявку
-              </button>
+              </a>
             </div>
             <div class="decor-lines__line"></div>
           </div>
@@ -1013,7 +1014,10 @@
                       Пройдите короткий опрос и получите доступ для
                       online-визуализации вашей будущей вывески
                     </p>
-                    <a href="#quiz" class="survey__button button--1 popup-link">
+                    <a
+                      href="#quiz--1"
+                      class="survey__button button--1 popup-link"
+                    >
                       Пройти опрос
                     </a>
                   </div>
@@ -1038,12 +1042,12 @@
                       Но не знаете, с чего начать? Оставьте заявку и наш
                       специалист свяжется с Вами.
                     </p>
-                    <button
+                    <a
+                      href="#popup-contact"
                       class="cooperation-with-us__button button--1 popup-contact-open-btn popup-link"
-                      data-popup="popup-contact"
                     >
                       Оставить заявку
-                    </button>
+                    </a>
                   </div>
                   <div class="cooperation-with-us__img-wrapper">
                     <img
@@ -1386,52 +1390,88 @@
         </div>
       </div>
     </div>
-    <div class="popup" id="quiz">
+    <div class="popup" id="quiz--1">
       <div class="popup__body">
-        <div class="popup__content quiz">
-          <form
-            class="quiz__content quiz--active"
-            action="#"
-            data-quiz-index="1"
-          >
-            <p class="quiz__title title--2">Ваш Регион присутствия</p>
-            <div class="quiz__answers">
-              <div class="quiz__label-wrapper">
-                <label class="quiz__label">
-                  <input class="input-radio" type="radio" name="region" />
-                  <span class="quiz__radio input-radio-custom"></span>
-                  Город
-                </label>
-                <input class="input" type="text" />
-              </div>
+        <form class="popup__content quiz quiz--1">
+          <p class="quiz__title title--2">Ваш Регион присутствия</p>
+          <div class="quiz__answers">
+            <div class="quiz__label-wrapper">
               <label class="quiz__label">
                 <input class="input-radio" type="radio" name="region" />
                 <span class="quiz__radio input-radio-custom"></span>
-                Cтолица региона
+                Город
               </label>
-              <label class="quiz__label">
-                <input class="input-radio" type="radio" name="region" />
-                <span class="quiz__radio input-radio-custom"></span>
-                Несколько регионов
-              </label>
-              <label class="quiz__label">
-                <input class="input-radio" type="radio" name="region" />
-                <span class="quiz__radio input-radio-custom"></span>
-                Европейская часть россии
-              </label>
-              <label class="quiz__label">
-                <input class="input-radio" type="radio" name="region" />
-                <span class="quiz__radio input-radio-custom"></span>
-                Восточная часть россии
-              </label>
-              <label class="quiz__label">
-                <input class="input-radio" type="radio" name="region" />
-                <span class="quiz__radio input-radio-custom"></span>
-                Вся россия
-              </label>
+              <input class="input" type="text" />
             </div>
-          </form>
-        </div>
+            <label class="quiz__label">
+              <input class="input-radio" type="radio" name="region" />
+              <span class="quiz__radio input-radio-custom"></span>
+              Cтолица региона
+            </label>
+            <label class="quiz__label">
+              <input class="input-radio" type="radio" name="region" />
+              <span class="quiz__radio input-radio-custom"></span>
+              Несколько регионов
+            </label>
+            <label class="quiz__label">
+              <input class="input-radio" type="radio" name="region" />
+              <span class="quiz__radio input-radio-custom"></span>
+              Европейская часть россии
+            </label>
+            <label class="quiz__label">
+              <input class="input-radio" type="radio" name="region" />
+              <span class="quiz__radio input-radio-custom"></span>
+              Восточная часть россии
+            </label>
+            <label class="quiz__label">
+              <input class="input-radio" type="radio" name="region" />
+              <span class="quiz__radio input-radio-custom"></span>
+              Вся россия
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="popup" id="quiz--2">
+      <div class="popup__body">
+        <form class="popup__content quiz quiz--1">
+          <p class="quiz__title title--2">Ваш Регион присутствия</p>
+          <div class="quiz__answers">
+            <div class="quiz__label-wrapper">
+              <label class="quiz__label">
+                <input class="input-radio" type="radio" name="region" />
+                <span class="quiz__radio input-radio-custom"></span>
+                Город
+              </label>
+              <input class="input" type="text" />
+            </div>
+            <label class="quiz__label">
+              <input class="input-radio" type="radio" name="region" />
+              <span class="quiz__radio input-radio-custom"></span>
+              Cтолица региона
+            </label>
+            <label class="quiz__label">
+              <input class="input-radio" type="radio" name="region" />
+              <span class="quiz__radio input-radio-custom"></span>
+              Несколько регионов
+            </label>
+            <label class="quiz__label">
+              <input class="input-radio" type="radio" name="region" />
+              <span class="quiz__radio input-radio-custom"></span>
+              Европейская часть россии
+            </label>
+            <label class="quiz__label">
+              <input class="input-radio" type="radio" name="region" />
+              <span class="quiz__radio input-radio-custom"></span>
+              Восточная часть россии
+            </label>
+            <label class="quiz__label">
+              <input class="input-radio" type="radio" name="region" />
+              <span class="quiz__radio input-radio-custom"></span>
+              Вся россия
+            </label>
+          </div>
+        </form>
       </div>
     </div>
 
