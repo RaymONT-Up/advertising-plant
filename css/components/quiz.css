@@ -6,7 +6,8 @@
 }
 .quiz__title {
   text-align: left;
-  margin-bottom: 20px;
+  font-weight: 400;
+  margin-bottom: 50px;
 }
 .quiz__answers {
   display: flex;

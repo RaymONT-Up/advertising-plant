@@ -266,6 +266,23 @@ body.body-lock {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .input--2 {
+  padding: 12px 18px;
+  border-radius: var(--default-border-radius);
+
+  font-size: 14px;
+  font-family: "Gilroy";
+
+  margin-top: 7px;
+  width: 100%;
+
+  color: var(--dis-accent-color);
+  border: 1px solid var(--dis-accent-color);
+  background-color: transparent;
+
+  transition: all, 0.3s;
+}
+.input--2:focus-visible {
+  outline-color: var(--accent-color);
 }
 .input::placeholder {
   font-size: 14px;
