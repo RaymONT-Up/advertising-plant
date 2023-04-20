@@ -10,10 +10,7 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 18px 100px;
 }
-.faq__box {
-  display: flex;
-  flex-direction: column;
-}
+
 .faq__accordion {
   border-radius: var(--default-border-radius);
   overflow: hidden;
