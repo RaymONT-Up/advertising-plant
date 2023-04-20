@@ -6,15 +6,14 @@
 }
 
 .faq__list-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 18px 100px;
+  columns: 2;
 }
 
 .faq__accordion {
   border-radius: var(--default-border-radius);
   overflow: hidden;
   background-color: var(--card-bg-color-2);
+  margin-bottom: 18px;
 }
 
 .faq__accordion-btn {
