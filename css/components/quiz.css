@@ -95,8 +95,10 @@
   display: block;
   margin-left: auto;
   text-align: right;
-  font-size: 16px;
+
   padding: 20px;
+
+  font-size: 16px;
 
   color: var(--main-text-color);
 }
