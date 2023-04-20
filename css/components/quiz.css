@@ -9,6 +9,9 @@
   padding: 40px 45px 30px 58px;
   width: 100%;
 }
+.quiz .input-radio-custom {
+  border-color: #fff;
+}
 .quiz--active {
 }
 .quiz__content {

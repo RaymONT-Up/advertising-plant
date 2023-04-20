@@ -35,6 +35,7 @@ quizBts.forEach(btn => {
 
         // Закрываю текущий и отккываю новый P.S function from popup.js
         popupOpen(nextQuiz);
+        return;
       }
     });
   });
