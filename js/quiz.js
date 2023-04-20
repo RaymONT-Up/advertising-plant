@@ -1,8 +1,9 @@
-const quizBts = document.querySelectorAll(".quiz__btn");
+const quizBts = document.querySelectorAll(".quiz__btn-next");
 const quizForms = document.querySelectorAll(".popup[data-quiz-index]");
 const finalForm = document
   .querySelector("#quiz--7")
   .querySelector(".quiz__form");
+const quizStartBtn = document.querySelector(".survey__button");
 
 quizBts.forEach(btn => {
   btn.addEventListener("click", e => {
@@ -29,9 +30,9 @@ quizBts.forEach(btn => {
         }
 
         // Присваиваю для конечного инпута value
-        finalInput.value = inputData;
-        finalInput.dataset.value = inputData;
-        console.log(finalInput.dataset.value);
+
+        finalInput.setAttribute("value", inputData);
+        quizStartBtn.setAttribute("href", `#quiz--${+from + 1}`);
 
         // Закрываю текущий и отккываю новый P.S function from popup.js
         popupOpen(nextQuiz);
