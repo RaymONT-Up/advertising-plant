@@ -14,6 +14,8 @@
 }
 
 body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 
   font-size: 16px;
@@ -35,6 +37,7 @@ body.body-lock {
   background-color: var(--page-bg-color);
 }
 *::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 6px;
   border-radius: 6px;
 
   background-color: var(--accent-color);
@@ -61,7 +64,15 @@ body.body-lock {
 }
 
 .decor-lines__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .decor-lines__content {
@@ -69,7 +80,13 @@ body.body-lock {
 }
 .decor-lines__line {
   position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -moz-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
   height: 1px;
   background-color: var(--accent-color);
@@ -78,11 +95,17 @@ body.body-lock {
   content: "";
   position: absolute;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   min-height: 7px;
   height: 7px;
   min-width: 7px;
   height: 7px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
 
   background-color: var(--accent-color);
@@ -97,7 +120,11 @@ body.body-lock {
 .card {
   width: 100%;
   padding: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-border-radius: var(--default-border-radius);
+  -moz-border-radius: var(--default-border-radius);
   border-radius: var(--default-border-radius);
 
   text-align: center;
@@ -109,7 +136,11 @@ body.body-lock {
   position: relative;
   width: 100%;
   padding: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-border-radius: var(--default-border-radius);
+  -moz-border-radius: var(--default-border-radius);
   border-radius: var(--default-border-radius);
 
   text-align: center;
@@ -122,12 +153,18 @@ body.body-lock {
   z-index: 2;
   top: 0;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 70%;
   height: 55%;
   background-image: url(./../images/blink.png);
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 
@@ -145,6 +182,14 @@ body.body-lock {
 
   width: 100%;
 
+  -webkit-transform: translate(-50%, -50%);
+
+  -moz-transform: translate(-50%, -50%);
+
+  -ms-transform: translate(-50%, -50%);
+
+  -o-transform: translate(-50%, -50%);
+
   transform: translate(-50%, -50%);
 }
 .blink-line::after {
@@ -156,6 +201,8 @@ body.body-lock {
   background-image: url(./../images/blink.png);
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 .blink-line::before {
@@ -209,6 +256,8 @@ body.body-lock {
 /* Buttons */
 .button--1 {
   display: inline-block;
+  -webkit-border-radius: var(--default-border-radius);
+  -moz-border-radius: var(--default-border-radius);
   border-radius: var(--default-border-radius);
   padding: 14px 30px;
 
@@ -221,13 +270,25 @@ body.body-lock {
   color: var(--main-text-color);
   background-color: var(--accent-color);
 
+  -webkit-transition: all, 0.3s;
+
+  -o-transition: all, 0.3s;
+
+  -moz-transition: all, 0.3s;
+
   transition: all, 0.3s;
 }
 .button--1:hover {
+  -webkit-box-shadow: 0px 0px 6px var(--accent-color);
+  -moz-box-shadow: 0px 0px 6px var(--accent-color);
   box-shadow: 0px 0px 6px var(--accent-color);
 }
 /* Swiper slider */
 .slider__arrows {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .slider__arrow {
@@ -236,8 +297,16 @@ body.body-lock {
   width: 30px;
 
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
   background-position: center;
+
+  -webkit-transition: opacity 0.3s;
+
+  -o-transition: opacity 0.3s;
+
+  -moz-transition: opacity 0.3s;
 
   transition: opacity 0.3s;
 }
@@ -253,8 +322,12 @@ body.body-lock {
 }
 /* Inputs */
 .input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 5px 20px;
+  -webkit-border-radius: var(--default-border-radius);
+  -moz-border-radius: var(--default-border-radius);
   border-radius: var(--default-border-radius);
   border: 1px solid var(--accent-color);
 
@@ -267,22 +340,62 @@ body.body-lock {
 }
 .input--2 {
   padding: 12px 18px;
+  -webkit-border-radius: var(--default-border-radius);
+  -moz-border-radius: var(--default-border-radius);
   border-radius: var(--default-border-radius);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 
   font-size: 14px;
   font-family: "Gilroy";
 
-  margin-top: 7px;
   width: 100%;
 
   color: var(--dis-accent-color);
   border: 1px solid var(--dis-accent-color);
   background-color: transparent;
 
+  -webkit-transition: all, 0.3s;
+
+  -o-transition: all, 0.3s;
+
+  -moz-transition: all, 0.3s;
+
   transition: all, 0.3s;
 }
 .input--2:focus-visible {
   outline-color: var(--accent-color);
+}
+.input::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+
+  color: var(--grey-color);
+}
+.input:-moz-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+
+  color: var(--grey-color);
+}
+.input::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+
+  color: var(--grey-color);
+}
+.input:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+
+  color: var(--grey-color);
+}
+.input::-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+
+  color: var(--grey-color);
 }
 .input::placeholder {
   font-size: 14px;
@@ -313,6 +426,8 @@ input[type="submit"] {
   height: 30px;
   min-width: 30px;
   min-height: 30px;
+  -webkit-border-radius: var(--default-border-radius);
+  -moz-border-radius: var(--default-border-radius);
   border-radius: var(--default-border-radius);
   border: 2px solid var(--accent-color);
 
@@ -324,13 +439,27 @@ input[type="submit"] {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+
+  -webkit-border-radius: var(--default-border-radius);
+
+  -moz-border-radius: var(--default-border-radius);
 
   border-radius: var(--default-border-radius);
   width: 15px;
   height: 15px;
 
   background-color: var(--accent-color);
+
+  -webkit-transition: all, 0.3s;
+
+  -o-transition: all, 0.3s;
+
+  -moz-transition: all, 0.3s;
 
   transition: all, 0.3s;
   opacity: 0;
@@ -353,7 +482,13 @@ input[type="submit"] {
   height: 18px;
   min-width: 18px;
   min-height: 18px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+
+  -webkit-border-radius: 50%;
+
+  -moz-border-radius: 50%;
 
   border-radius: 50%;
   border: 1px solid rgba(91, 91, 96, 0.7);
@@ -365,13 +500,27 @@ input[type="submit"] {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+
+  -webkit-border-radius: var(--default-border-radius);
+
+  -moz-border-radius: var(--default-border-radius);
 
   border-radius: var(--default-border-radius);
   width: 9px;
   height: 9px;
 
   background-color: var(--accent-color);
+
+  -webkit-transition: all, 0.3s;
+
+  -o-transition: all, 0.3s;
+
+  -moz-transition: all, 0.3s;
 
   transition: all, 0.3s;
   opacity: 0;
@@ -398,6 +547,8 @@ input[type="submit"] {
 
   width: 7px;
   height: 7px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
 
   background-color: var(--accent-color);
@@ -417,6 +568,12 @@ input[type="submit"] {
   right: 0;
   bottom: 0;
 
+  -webkit-transition: all 0.5s;
+
+  -o-transition: all 0.5s;
+
+  -moz-transition: all 0.5s;
+
   transition: all 0.5s;
   opacity: 0;
   visibility: hidden;
@@ -430,11 +587,25 @@ input[type="submit"] {
 }
 .popup__body {
   padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 
   min-height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   z-index: 10;
 
@@ -444,7 +615,13 @@ input[type="submit"] {
   position: relative;
   z-index: 9;
   padding: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+
+  -webkit-border-radius: 20px;
+
+  -moz-border-radius: 20px;
 
   border-radius: 20px;
   border: 1px solid var(--accent-color);
@@ -461,6 +638,9 @@ input[type="submit"] {
 }
 .popup__btn-close svg {
   stroke: var(--color-text-2);
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  -moz-transition: all, 0.3s;
   transition: all, 0.3s;
 }
 .popup__btn-close:hover svg {
@@ -488,6 +668,8 @@ input[type="submit"] {
   }
 
   .button--1:hover {
+    -webkit-box-shadow: 0px 0px 6px var(--accent-color);
+    -moz-box-shadow: 0px 0px 6px var(--accent-color);
     box-shadow: 0px 0px 6px var(--accent-color);
   }
 }
@@ -504,6 +686,8 @@ input[type="submit"] {
   }
   .button--1,
   .input {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
     border-radius: 6px;
   }
   .list-decor li:not(:last-child) {
