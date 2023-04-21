@@ -72,7 +72,7 @@
   -ms-flex-direction: row;
   flex-direction: row;
 
-  margin-bottom: 11px;
+  margin-bottom: 13px;
 
   cursor: pointer;
 }
@@ -124,7 +124,7 @@
   height: 42px;
 }
 #quiz--1 .quiz__label-with-input {
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 #quiz--1 .quiz__answers {
@@ -139,10 +139,15 @@
 }
 #quiz--2 .quiz__label {
   height: auto;
-  margin-bottom: 11px;
+  margin-bottom: 14px;
 }
 #quiz--2 .quiz__label--mb {
   margin-bottom: 27px;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 /* quiz--3 */
@@ -240,6 +245,8 @@
   -moz-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  max-width: 410px;
+    margin-left: auto;
 }
 .quiz__paragraph {
   margin-top: auto;
