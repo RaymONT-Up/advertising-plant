@@ -5,13 +5,33 @@
   margin-top: 31px;
 }
 .contact-resume__form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   max-width: 300px;
   margin: 0 auto;
 }
 .contact-resume__form-label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin-bottom: 10px;
 
@@ -31,6 +51,8 @@
   position: relative;
   display: block;
   margin-top: 8px;
+  -webkit-border-radius: var(--default-border-radius);
+  -moz-border-radius: var(--default-border-radius);
   border-radius: var(--default-border-radius);
   border: 1.5px dotted var(--accent-color);
   padding: 13px 16px;
@@ -50,6 +72,10 @@
   position: absolute;
   top: 50%;
   right: 1%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
   width: 16px;
@@ -58,9 +84,13 @@
   background-image: url(./../../images/icons/load-plus.png);
   background-position: center center;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
 }
 .contact-resume__form-input {
+  -webkit-border-radius: var(--default-border-radius);
+  -moz-border-radius: var(--default-border-radius);
   border-radius: var(--default-border-radius);
 
   margin-top: 8px;
@@ -131,6 +161,12 @@
   left: 0;
   height: 2px;
   background-color: var(--accent-color);
+
+  -webkit-transition: all, 0.3s;
+
+  -o-transition: all, 0.3s;
+
+  -moz-transition: all, 0.3s;
 
   transition: all, 0.3s;
 }

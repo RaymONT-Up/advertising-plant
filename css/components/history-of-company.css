@@ -39,6 +39,8 @@
 }
 
 .history-of-company__activity-image-wrapper {
+  -webkit-border-radius: var(--default-border-radius);
+  -moz-border-radius: var(--default-border-radius);
   border-radius: var(--default-border-radius);
   overflow: hidden;
 }
@@ -46,6 +48,7 @@
   display: block;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 

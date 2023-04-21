@@ -33,7 +33,13 @@
   right: -8%;
   width: 7px;
   height: 7px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   z-index: 2;
 
@@ -46,11 +52,14 @@
 }
 
 .franchise-production__item-img {
+  -webkit-border-radius: var(--default-border-radius);
+  -moz-border-radius: var(--default-border-radius);
   border-radius: var(--default-border-radius);
   overflow: hidden;
 
   width: 100%;
   display: block;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .franchise-production__item-title {

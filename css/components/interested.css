@@ -5,6 +5,8 @@
 .interested__form {
   max-width: 960px;
   margin: 35px auto 65px auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 15px;
   width: 100%;
@@ -19,12 +21,24 @@
   padding: 11px 19px;
 }
 .interested__form-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   max-width: 580px;
   margin: 0 auto;
 }
 .interested__form-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 10px;
   width: 225px;
@@ -32,7 +46,15 @@
   margin-right: 35px;
 }
 .interested__form-checkbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   max-width: 347px;
   width: 100%;
@@ -58,7 +80,17 @@
     margin: 0 auto 10px auto;
   }
   .interested__form-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     max-width: 320px;
   }
@@ -88,7 +120,17 @@
     max-width: 250px;
   }
   .interested__form-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     max-width: 250px;
   }

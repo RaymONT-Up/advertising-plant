@@ -24,19 +24,43 @@
 }
 /*  */
 .franchise-geo-clients__invite {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 23px 30px 27px 30px;
   margin-bottom: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: 450px;
   overflow: hidden;
+  -webkit-border-radius: var(--default-border-radius);
+  -moz-border-radius: var(--default-border-radius);
   border-radius: var(--default-border-radius);
 
   background-image: url(./../../images/franchise-geo-clients__invite-bg.png);
   background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
 }

@@ -9,9 +9,15 @@
 }
 
 .hero__slider-slide {
+  -webkit-border-radius: var(--default-border-radius);
+  -moz-border-radius: var(--default-border-radius);
   border-radius: var(--default-border-radius);
   overflow: hidden;
   width: 100%;
+
+  -webkit-box-sizing: border-box;
+
+  -moz-box-sizing: border-box;
 
   box-sizing: border-box;
   width: 100%;
@@ -24,6 +30,8 @@
   background-image: url("../../images/hero-slider-bg--pc.png");
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
 }
 .hero__slider-slide-content {

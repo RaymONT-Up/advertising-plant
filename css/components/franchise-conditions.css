@@ -24,12 +24,18 @@
   position: absolute;
   top: 59%;
   right: -18%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
   width: 16px;
   height: 16px;
 
   background-image: url(./../../images/icons/arrow-step-to.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -86,7 +92,13 @@
   .franchise-conditions__steps-item:not(:last-child)::after {
     top: auto;
     bottom: -35%;
+    right: -webkit-calc(50% - 16px);
+    right: -moz-calc(50% - 16px);
     right: calc(50% - 16px);
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+    -moz-transform: translate(-50%, -50%) rotate(90deg);
+    -ms-transform: translate(-50%, -50%) rotate(90deg);
+    -o-transform: translate(-50%, -50%) rotate(90deg);
     transform: translate(-50%, -50%) rotate(90deg);
   }
 }

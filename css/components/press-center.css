@@ -3,7 +3,15 @@
   margin-bottom: 40px;
 }
 .press-center__slider-arrows {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 40px;
 }
@@ -27,6 +35,8 @@
 .press-center__slide-img-wrapper {
   width: 100%;
   margin-bottom: 16px;
+  -webkit-border-radius: var(--default-border-radius);
+  -moz-border-radius: var(--default-border-radius);
   border-radius: var(--default-border-radius);
 
   overflow: hidden;
@@ -35,6 +45,7 @@
   display: block;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .press-center__slide-title {
@@ -52,6 +63,7 @@
   height: 70px;
   /* Выводить только 4 строки */
   overflow: hidden;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   display: -moz-box;
   -moz-box-orient: vertical;

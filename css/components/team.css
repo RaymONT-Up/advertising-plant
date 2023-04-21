@@ -1,6 +1,5 @@
 @import "./team-card.css";
-.team {
-}
+
 .team__inner {
   margin-bottom: 60px;
 }
@@ -111,6 +110,8 @@
     padding: 6px;
     max-width: 170px;
     width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
   .team__invite-card-title span {

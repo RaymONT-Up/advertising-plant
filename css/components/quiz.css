@@ -12,10 +12,7 @@
 .quiz .input-radio-custom {
   border-color: #fff;
 }
-.quiz--active {
-}
-.quiz__content {
-}
+
 .quiz__title {
   margin-bottom: 45px;
 
@@ -145,9 +142,9 @@
   margin-bottom: 27px;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
-     -moz-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -moz-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 /* quiz--3 */
@@ -246,7 +243,7 @@
   -ms-flex-align: center;
   align-items: center;
   max-width: 410px;
-    margin-left: auto;
+  margin-left: auto;
 }
 .quiz__paragraph {
   margin-top: auto;

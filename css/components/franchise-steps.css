@@ -9,6 +9,8 @@
 }
 
 .franchise-steps__item {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 21px 23px 10px 23px;
   min-height: 200px;

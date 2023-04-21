@@ -34,12 +34,18 @@
   position: absolute;
   right: -8%;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 39px;
   height: 37px;
 
   background-image: url(./../../images/icons/career-opportunities-1.png);
   background-position: center center;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -95,10 +101,14 @@
 }
 .career-opportunities__notification {
   max-width: 700px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   padding: 6px 10px 9px 10px;
   margin: 0 auto;
+  -webkit-border-radius: var(--default-border-radius);
+  -moz-border-radius: var(--default-border-radius);
   border-radius: var(--default-border-radius);
   border: 1px solid var(--accent-color);
 

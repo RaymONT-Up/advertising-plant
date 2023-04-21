@@ -20,11 +20,17 @@
   top: 50%;
   width: 200px;
   height: 15px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
   transform: rotate(90deg);
 
   background-image: url(../../images/blink.png);
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
   background-size: 100% 100%;
 }
 .unique-offers__cooperation-with-us-wrapper {
@@ -61,6 +67,10 @@
   .unique-offers__cooperation-with-us-wrapper .cooperation-with-us {
     margin: 0;
     max-width: 100%;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
   }
   .unique-offers__cooperation-with-us .cooperation-with-us {
