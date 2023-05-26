@@ -234,6 +234,12 @@ body.body-lock {
   font-family: "Mulish";
   text-align: center;
 }
+.title--3 {
+  font-size: 30px;
+  color: var(--main-text-color);
+  font-weight: 400;
+  font-family: "Mulish";
+}
 /* Paragraphs */
 .paragraph--1 {
   display: block;

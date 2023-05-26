@@ -27,14 +27,12 @@
   min-height: 450px;
   max-height: 450px;
 
-  background-image: url("../../images/hero-slider-bg--pc.png");
+  background-image: url("./../../images/hero-slider-bg--pc.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-}
-.hero__slider-slide-content {
 }
 
 .hero__title {

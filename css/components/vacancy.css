@@ -1,0 +1,122 @@
+.vacancy {
+}
+.vacancy .container {
+  /* max-width: 1304px; */
+}
+.vacancy__inner {
+  padding-top: 194px;
+  display: grid;
+  grid-template-columns: 54.5% 38.5%;
+  grid-gap: 7%;
+}
+.vacancy__info {
+}
+.vacancy__title {
+  margin-bottom: 30px;
+}
+
+.vacancy__salary {
+  margin-bottom: 59px;
+}
+
+.vacancy__desc {
+  margin-bottom: 20px;
+}
+.vacancy__paragraph,
+.vacancy__item {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  font-family: "Mulish";
+  color: var(--main-text-color);
+}
+.vacancy__paragraph:not(:last-child) {
+  margin-bottom: 19px;
+}
+.vacancy__box {
+  margin-bottom: 20px;
+}
+.vacancy__subtitle {
+  margin-bottom: 19px;
+
+  font-family: "Mulish";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--main-text-color);
+}
+.vacancy__subtitle--conditions {
+  margin-bottom: 11px;
+}
+
+.vacancy__list {
+}
+.vacancy__item {
+}
+.vacancy__sub-list {
+  margin-top: 18px;
+}
+
+.vacancy__phone-contact {
+  margin-top: 24px;
+
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--main-text-color);
+}
+.vacancy__phone {
+  display: block;
+  margin-top: 8px;
+
+  font-weight: 700;
+  font-size: 30px;
+  text-decoration: underline;
+
+  color: var(--main-text-color);
+}
+.vacancy__phone:hover {
+  text-decoration: none;
+}
+.vacancy__contact {
+}
+.vacancy__card {
+  padding: 19px 15px;
+  margin-bottom: 25px;
+}
+
+.vacancy__img-wrapper {
+  overflow: hidden;
+
+  -webkit-border-radius: 10px;
+
+  -moz-border-radius: 10px;
+
+  border-radius: 10px;
+}
+
+.vacancy__contact-title {
+  padding-top: 8px;
+  margin-bottom: 9px;
+  margin-right: -6px;
+  font-size: 25px;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: "Mulish";
+  text-align: center;
+
+  color: var(--main-text-color);
+}
+.vacancy__contact-text {
+  margin-bottom: 19px;
+  margin-right: -6px;
+
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Mulish";
+  text-align: center;
+
+  color: var(--dis-accent-color-2);
+}
+.vacancy__btn {
+  margin: 0 auto;
+}
