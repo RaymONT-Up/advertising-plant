@@ -1,22 +1,28 @@
-.vacancy {
-}
-.vacancy .container {
-  /* max-width: 1304px; */
-}
 .vacancy__inner {
+  margin-bottom: 76px;
   padding-top: 194px;
   display: grid;
   grid-template-columns: 54.5% 38.5%;
   grid-gap: 7%;
 }
-.vacancy__info {
-}
+
 .vacancy__title {
   margin-bottom: 30px;
+
+  font-size: 40px;
+  color: var(--main-text-color);
+  font-weight: 700;
+  line-height: 114%;
+  font-family: "Mulish";
 }
 
 .vacancy__salary {
   margin-bottom: 59px;
+
+  font-size: 30px;
+  color: var(--main-text-color);
+  font-weight: 400;
+  font-family: "Mulish";
 }
 
 .vacancy__desc {
@@ -49,10 +55,6 @@
   margin-bottom: 11px;
 }
 
-.vacancy__list {
-}
-.vacancy__item {
-}
 .vacancy__sub-list {
   margin-top: 18px;
 }
@@ -77,8 +79,7 @@
 .vacancy__phone:hover {
   text-decoration: none;
 }
-.vacancy__contact {
-}
+
 .vacancy__card {
   padding: 19px 15px;
   margin-bottom: 25px;
@@ -92,6 +93,13 @@
   -moz-border-radius: 10px;
 
   border-radius: 10px;
+}
+.vacancy__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .vacancy__contact-title {
@@ -119,4 +127,164 @@
 }
 .vacancy__btn {
   margin: 0 auto;
+  padding: 14px 26px;
+}
+
+@media (max-width: 1200px) {
+  .vacancy__inner {
+    grid-template-columns: 54.5% 41.5%;
+    grid-gap: 4%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .vacancy__inner {
+    padding-top: 113px;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-gap: 9px;
+  }
+  .vacancy__contact {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .vacancy__title {
+    max-width: 548px;
+    margin: 0 auto 16px auto;
+
+    font-size: 30px;
+  }
+  .vacancy__salary {
+    margin-bottom: 30px;
+  }
+
+  .vacancy__box {
+    margin-bottom: 25px;
+  }
+
+  .vacancy__sub-list {
+    margin-top: 25px;
+  }
+
+  .vacancy__paragraph,
+  .vacancy__item {
+    font-size: 20px;
+  }
+  .vacancy__item {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .vacancy__subtitle {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+
+  .vacancy__desc {
+    margin-bottom: 26px;
+  }
+
+  .vacancy__phone-contact {
+    display: none;
+  }
+
+  .vacancy__paragraph:not(:last-child) {
+    margin-bottom: 23px;
+  }
+  .vacancy__paragraph:nth-child(2) br {
+    display: none;
+  }
+  .vacancy__paragraph:nth-child(2) {
+    margin: 0 auto 25px auto;
+    max-width: 709px;
+  }
+
+  .vacancy__paragraph:nth-child(3) {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .vacancy__inner {
+    padding-top: 108px;
+    grid-gap: 20px;
+  }
+
+  .vacancy__img-wrapper {
+    max-width: 333px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .vacancy__title,
+  .vacancy__salary {
+    font-size: 20px;
+  }
+  .vacancy__title {
+    margin-bottom: 24px;
+  }
+  .vacancy__salary {
+    margin-bottom: 32px;
+  }
+
+  .vacancy__paragraph,
+  .vacancy__item {
+    font-size: 16px;
+
+    padding-right: 3px;
+    margin: 0 auto;
+    max-width: 332px;
+  }
+  .vacancy__paragraph:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .vacancy__paragraph:nth-child(2) {
+    max-width: 295px;
+  }
+  .vacancy__paragraph:nth-child(3) {
+    max-width: 333px;
+  }
+
+  .vacancy__desc {
+    margin-bottom: 19px;
+  }
+  .vacancy__box {
+    margin-bottom: 18px;
+  }
+
+  .vacancy__subtitle {
+    margin-bottom: 10px;
+    padding-right: 5px;
+    font-size: 20px;
+  }
+
+  .vacancy__sub-list {
+    margin-top: 20px;
+  }
+
+  .vacancy__phone-contact {
+    display: block;
+    font-size: 16px;
+  }
+  .vacancy__phone {
+    font-size: 25px;
+  }
+
+  .vacancy__card {
+    padding: 15px;
+    margin-bottom: 12px;
+  }
+
+  .vacancy__contact-title {
+    font-size: 18px;
+  }
+  .vacancy__contact-text {
+    font-size: 10px;
+    margin-bottom: 14px;
+  }
+  .vacancy__btn {
+    font-size: 16px;
+    padding: 12px 26px;
+  }
 }
