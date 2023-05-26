@@ -81,7 +81,7 @@
 }
 
 .vacancy__card {
-  padding: 19px 15px;
+  padding: 19px 20px;
   margin-bottom: 25px;
 }
 
@@ -115,7 +115,7 @@
   color: var(--main-text-color);
 }
 .vacancy__contact-text {
-  margin-bottom: 19px;
+  margin-bottom: 22px;
   margin-right: -6px;
 
   font-size: 14px;
@@ -132,8 +132,8 @@
 
 @media (max-width: 1200px) {
   .vacancy__inner {
-    grid-template-columns: 54.5% 41.5%;
-    grid-gap: 4%;
+    grid-template-columns: 55.5% 42.5%;
+    grid-gap: 2%;
   }
 }
 
@@ -203,6 +203,11 @@
     max-width: 700px;
     margin: 0 auto;
   }
+
+  .vacancy__card {
+    padding: 19px 20px;
+    margin-bottom: 25px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -234,6 +239,9 @@
     padding-right: 3px;
     margin: 0 auto;
     max-width: 332px;
+  }
+  .vacancy__item--mob-full-width {
+    max-width: 100%;
   }
   .vacancy__paragraph:not(:last-child) {
     margin-bottom: 20px;
