@@ -72,12 +72,12 @@
 
   font-weight: 700;
   font-size: 30px;
-  text-decoration: underline;
+  text-decoration: none;
 
   color: var(--main-text-color);
 }
 .vacancy__phone:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .vacancy__card {
